@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "3": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "4": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "6": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "7": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "8": {
+      "item": "tr_slender:tainted_planks"
+    }
+  },
+  "result": {
+    "item": "tr_slender:tainted_stairs",
+    "count": 4
+  }
+}

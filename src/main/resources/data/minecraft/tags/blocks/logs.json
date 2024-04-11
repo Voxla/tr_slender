@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "tr_slender:tainted_wood",
+    "tr_slender:stripped_tainted_wood",
+    "tr_slender:tainted_log",
+    "tr_slender:stripped_tainted_log"
+  ]
+}

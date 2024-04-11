@@ -1,0 +1,15 @@
+{
+  "structures": [
+    {
+      "structure": "tr_slender:crosswalls",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "distance": 0,
+    "spacing": 9,
+    "separation": 1,
+    "salt": 452364576
+  }
+}

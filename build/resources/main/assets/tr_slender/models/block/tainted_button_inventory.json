@@ -1,0 +1,7 @@
+{
+  "parent": "block/button_inventory",
+  "textures": {
+    "texture": "tr_slender:block/tainted_planks"
+  },
+  "render_type": "solid"
+}

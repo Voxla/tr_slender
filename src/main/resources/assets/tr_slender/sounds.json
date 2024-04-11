@@ -1,0 +1,74 @@
+{
+  "pianoscare": {
+    "sounds": [
+      {
+        "name": "tr_slender:pianoscare",
+        "stream": true
+      }
+    ]
+  },
+  "pagegrab": {
+    "sounds": [
+      {
+        "name": "tr_slender:pagegrab",
+        "stream": false
+      }
+    ]
+  },
+  "pagehit": {
+    "sounds": [
+      {
+        "name": "tr_slender:pagehit",
+        "stream": false
+      }
+    ]
+  },
+  "slenderstatic": {
+    "sounds": [
+      {
+        "name": "tr_slender:slendermanstaticsound",
+        "stream": true
+      }
+    ]
+  },
+  "page1and2": {
+    "sounds": [
+      {
+        "name": "tr_slender:page1and2",
+        "stream": true
+      }
+    ]
+  },
+  "page3and4": {
+    "sounds": [
+      {
+        "name": "tr_slender:page3and4",
+        "stream": true
+      }
+    ]
+  },
+  "page5and6": {
+    "sounds": [
+      {
+        "name": "tr_slender:page5and6",
+        "stream": true
+      }
+    ]
+  },
+  "page7": {
+    "sounds": [
+      {
+        "name": "tr_slender:page7",
+        "stream": true
+      }
+    ]
+  },
+  "ponder": {
+    "sounds": [
+      {
+        "name": "tr_slender:ponder",
+        "stream": true
+      }
+    ]
+  }
+}

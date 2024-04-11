@@ -1,0 +1,12 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "spawners": {
+    "type": "tr_slender:slenderman",
+    "weight": 25,
+    "minCount": 1,
+    "maxCount": 1
+  }
+}

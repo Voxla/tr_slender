@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "3": {
+      "item": "tr_slender:tainted_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "tr_slender:tainted_planks"
+    }
+  },
+  "result": {
+    "item": "tr_slender:tainted_fence",
+    "count": 3
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tr_slender:block/tainted_planks",
+    "up": "tr_slender:block/tainted_planks",
+    "north": "tr_slender:block/tainted_planks",
+    "east": "tr_slender:block/tainted_planks",
+    "south": "tr_slender:block/tainted_planks",
+    "west": "tr_slender:block/tainted_planks",
+    "particle": "tr_slender:block/tainted_planks"
+  },
+  "render_type": "solid"
+}

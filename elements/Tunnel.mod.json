@@ -1,0 +1,28 @@
+{
+  "_fv": 47,
+  "_type": "restructure",
+  "definition": {
+    "restrictBiomes": [
+      {
+        "value": "CUSTOM:TaintedForest"
+      }
+    ],
+    "structureStep": "Surface structures",
+    "terrainAdaptation": "Beard thin",
+    "startHeightmap": "OCEAN FLOOR WG",
+    "structureRotation": true,
+    "expansionHack": false,
+    "jigsawSize": 1,
+    "absoluteHeight": 0,
+    "distanceFromCenter": 32,
+    "minSpacingSeparation": 1,
+    "maxSpacingSeparation": 8,
+    "selectedStructure": "tunnel",
+    "structuresWeight": 1,
+    "structureSetPlacement": "Random spread",
+    "templatesWeight": 1,
+    "typeElement": "Single pool element",
+    "typeProjection": "Rigid",
+    "adaptNoise": false
+  }
+}

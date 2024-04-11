@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "tr_slender:tainted_log"
+    },
+    "1": {
+      "item": "tr_slender:tainted_log"
+    },
+    "2": {
+      "item": "tr_slender:tainted_log"
+    },
+    "3": {
+      "item": "tr_slender:tainted_log"
+    }
+  },
+  "result": {
+    "item": "tr_slender:tainted_wood",
+    "count": 3
+  }
+}

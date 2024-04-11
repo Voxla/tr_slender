@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "tr_slender:tainted_log",
+    "tr_slender:tainted_wood",
+    "tr_slender:stripped_tainted_log",
+    "tr_slender:stripped_tainted_wood",
+    "tr_slender:tainted_planks",
+    "tr_slender:tainted_stairs",
+    "tr_slender:tainted_slab",
+    "tr_slender:tainted_fence",
+    "tr_slender:tainted_fence_gate",
+    "tr_slender:tainted_door",
+    "tr_slender:tainted_trapdoor",
+    "tr_slender:tainted_pressure_plate",
+    "tr_slender:tainted_button"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "tr_slender:block/page"
+    },
+    "facing=east": {
+      "model": "tr_slender:block/page",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "tr_slender:block/page",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "tr_slender:block/page",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "tr_slender:block/page",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "tr_slender:block/page",
+      "x": 90
+    }
+  }
+}

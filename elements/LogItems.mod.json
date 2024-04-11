@@ -1,0 +1,27 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:TaintedWood"
+      },
+      {
+        "value": "CUSTOM:TaintedLog"
+      },
+      {
+        "value": "CUSTOM:StrippedTaintedLog"
+      },
+      {
+        "value": "CUSTOM:StrippedTaintedWood"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [],
+    "name": "logs",
+    "namespace": "minecraft"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "tr_slender:tainted_planks"
+    }
+  },
+  "result": {
+    "item": "tr_slender:tainted_button",
+    "count": 1
+  }
+}

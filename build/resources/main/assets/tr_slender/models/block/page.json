@@ -1,0 +1,9 @@
+{
+  "parent": "tr_slender:custom/page",
+  "textures": {
+    "all": "tr_slender:block/page",
+    "particle": "tr_slender:block/page",
+    "0": "tr_slender:block/page"
+  },
+  "render_type": "solid"
+}

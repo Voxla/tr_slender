@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "tr_slender:block/tainted_planks",
+    "top": "tr_slender:block/tainted_planks",
+    "side": "tr_slender:block/tainted_planks"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tr_slender:block/tainted_slab"
+    },
+    "type=top": {
+      "model": "tr_slender:block/tainted_slab_top"
+    },
+    "type=double": {
+      "model": "tr_slender:block/tainted_slab_full"
+    }
+  }
+}
