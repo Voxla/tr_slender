@@ -4,6 +4,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.BlockPos;
 
+import net.mcreator.trslender.init.TrSlenderModBlocks;
+
 public class TaintedTreeLargeAdditionalGenerationConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
 		boolean found = false;
@@ -20,7 +22,10 @@ public class TaintedTreeLargeAdditionalGenerationConditionProcedure {
 					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WATER || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WATER
 							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.BUBBLE_COLUMN || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.LAVA
 							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB
-							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.BRICKS || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WAXED_OXIDIZED_CUT_COPPER) {
+							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.BRICKS || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WAXED_OXIDIZED_CUT_COPPER
+							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.POLISHED_ANDESITE
+							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == TrSlenderModBlocks.TAINTED_PLANKS.get()
+							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.SMOOTH_STONE || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == TrSlenderModBlocks.PAGE.get()) {
 						found = true;
 					}
 					sz = sz + 1;
