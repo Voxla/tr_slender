@@ -70,5 +70,125 @@
         "stream": true
       }
     ]
+  },
+  "tainted_wood_break": {
+    "sounds": [
+      {
+        "name": "tr_slender:tainted_wood_break1",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_break2",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_break3",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_break4",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_break5",
+        "stream": false
+      }
+    ]
+  },
+  "tainted_wood_step": {
+    "sounds": [
+      {
+        "name": "tr_slender:tainted_wood_step1",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_step2",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_step3",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_step4",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_step5",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_wood_step6",
+        "stream": false
+      }
+    ]
+  },
+  "forest_wind": {
+    "sounds": [
+      {
+        "name": "tr_slender:wind",
+        "stream": false
+      }
+    ]
+  },
+  "tainted_grass_step": {
+    "sounds": [
+      {
+        "name": "tr_slender:tainted_grass_step1",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step2",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step3",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step4",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step5",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step6",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step7",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step8",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step9",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:tainted_grass_step10",
+        "stream": false
+      }
+    ]
+  },
+  "forest_ambient": {
+    "sounds": [
+      {
+        "name": "tr_slender:forestambient1",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:forestambient2",
+        "stream": false
+      },
+      {
+        "name": "tr_slender:forestambient3",
+        "stream": false
+      }
+    ]
   }
 }

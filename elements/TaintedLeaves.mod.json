@@ -13,7 +13,7 @@
     "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
-    "displayFluidOverlay": false,
+    "displayFluidOverlay": true,
     "itemTexture": "",
     "particleTexture": "",
     "blockBase": "Leaves",
@@ -45,7 +45,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.CAVE_AIR"
     },
     "dropAmount": 0,
     "useLootTableForDrops": false,

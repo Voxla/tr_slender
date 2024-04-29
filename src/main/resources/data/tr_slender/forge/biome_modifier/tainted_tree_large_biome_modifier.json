@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "tr_slender:tainted_forest",
-  "features": "tr_slender:tainted_tree_large",
-  "step": "surface_structures"
-}

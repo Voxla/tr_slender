@@ -1,0 +1,7 @@
+{
+  "parent": "tr_slender:custom/flashlighton",
+  "textures": {
+    "0": "tr_slender:blocks/flashlighton",
+    "particle": "tr_slender:items/flashlighton"
+  }
+}

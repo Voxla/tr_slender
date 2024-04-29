@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom_rh",
+  "textures": {
+    "bottom": "tr_slender:blocks/tainted_door_bottom",
+    "top": "tr_slender:blocks/tainted_door_top"
+  }
+}

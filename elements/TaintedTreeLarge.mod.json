@@ -13,16 +13,23 @@
     "spawnXOffset": -3,
     "spawnZOffset": -3,
     "spawnWorldTypes": [
-      "Surface"
+      "Surface",
+      "CUSTOM:SlenderGamemode"
     ],
     "restrictionBlocks": [
       {
         "value": "Blocks.GRASS"
+      },
+      {
+        "value": "CUSTOM:TaintedGrassBlock"
       }
     ],
     "restrictionBiomes": [
       {
         "value": "CUSTOM:TaintedForest"
+      },
+      {
+        "value": "CUSTOM:TaintedForests"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK",

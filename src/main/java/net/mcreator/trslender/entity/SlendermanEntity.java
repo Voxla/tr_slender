@@ -4,9 +4,13 @@ package net.mcreator.trslender.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.projectile.AbstractArrow;
@@ -20,15 +24,14 @@ import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
@@ -37,21 +40,27 @@ import net.mcreator.trslender.procedures.SlendermanNaturalEntitySpawningConditio
 import net.mcreator.trslender.procedures.SlendermanEntityIsHurtProcedure;
 import net.mcreator.trslender.init.TrSlenderModEntities;
 
+@Mod.EventBusSubscriber
 public class SlendermanEntity extends Monster {
+	@SubscribeEvent
+	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
+		event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(TrSlenderModEntities.SLENDERMAN.get(), 25, 1, 1));
+	}
+
 	public SlendermanEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TrSlenderModEntities.SLENDERMAN.get(), world);
 	}
 
 	public SlendermanEntity(EntityType<SlendermanEntity> type, Level world) {
 		super(type, world);
-		setMaxUpStep(1.8f);
+		maxUpStep = 1.8f;
 		xpReward = 0;
 		setNoAi(false);
 		setPersistenceRequired();
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
+	public Packet<?> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -96,34 +105,32 @@ public class SlendermanEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		SlendermanEntityIsHurtProcedure.execute(this.level(), source.getEntity());
-		if (source.is(DamageTypes.IN_FIRE))
-			return false;
+		SlendermanEntityIsHurtProcedure.execute(this.level, source.getEntity());
 		if (source.getDirectEntity() instanceof AbstractArrow)
 			return false;
 		if (source.getDirectEntity() instanceof Player)
 			return false;
 		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
-		if (source.is(DamageTypes.FALL))
+		if (source == DamageSource.FALL)
 			return false;
-		if (source.is(DamageTypes.CACTUS))
+		if (source == DamageSource.CACTUS)
 			return false;
-		if (source.is(DamageTypes.DROWN))
+		if (source == DamageSource.DROWN)
 			return false;
-		if (source.is(DamageTypes.LIGHTNING_BOLT))
+		if (source == DamageSource.LIGHTNING_BOLT)
 			return false;
-		if (source.is(DamageTypes.EXPLOSION))
+		if (source.isExplosion())
 			return false;
-		if (source.is(DamageTypes.TRIDENT))
+		if (source.getMsgId().equals("trident"))
 			return false;
-		if (source.is(DamageTypes.FALLING_ANVIL))
+		if (source == DamageSource.ANVIL)
 			return false;
-		if (source.is(DamageTypes.DRAGON_BREATH))
+		if (source == DamageSource.DRAGON_BREATH)
 			return false;
-		if (source.is(DamageTypes.WITHER))
+		if (source == DamageSource.WITHER)
 			return false;
-		if (source.is(DamageTypes.WITHER_SKULL))
+		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
 	}
@@ -131,7 +138,7 @@ public class SlendermanEntity extends Monster {
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		SlendermanOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		SlendermanOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init() {

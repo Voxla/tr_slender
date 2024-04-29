@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:village",
+  "config": {
+    "start_pool": "tr_slender:oldhut",
+    "size": 1
+  },
+  "biomes": [
+    "tr_slender:tainted_forests",
+    "tr_slender:tainted_forest"
+  ],
+  "adapt_noise": true,
+  "spawn_overrides": {},
+  "data": {
+    "rotation": [
+      0,
+      1,
+      2,
+      3
+    ]
+  }
+}

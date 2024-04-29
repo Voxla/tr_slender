@@ -1,8 +1,0 @@
-{
-  "parent": "block/door_top_left_open",
-  "textures": {
-    "bottom": "tr_slender:block/tainted_door_bottom",
-    "top": "tr_slender:block/tainted_door_top"
-  },
-  "render_type": "solid"
-}

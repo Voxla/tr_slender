@@ -1,10 +1,10 @@
 modLoader="javafml"
-loaderVersion="[47,)"
+loaderVersion="[40,)"
 license="MIT License"
 
 [[mods]]
 modId="tr_slender"
-version="0.8.1"
+version="0.9.00"
 displayName="The Rise of Slender"
 credits="Mod made by Voxla - Created using mod maker MCreator"
 displayURL="https://www.curseforge.com/members/voxla/projects"
@@ -15,7 +15,7 @@ description="A mod that tries to bring Slender: The Eight Pages into Minecraft."
 [[dependencies.tr_slender]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.20.1]"
+    versionRange="[1.18.2]"
     ordering="NONE"
     side="BOTH"
 

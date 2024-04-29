@@ -1,0 +1,17 @@
+{
+  "_fv": 47,
+  "_type": "potioneffect",
+  "definition": {
+    "effectName": "Hallucinations",
+    "icon": "hallucinations.png",
+    "color": {
+      "value": -13434880,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "renderStatusInInventory": false,
+    "renderStatusInHUD": false
+  }
+}

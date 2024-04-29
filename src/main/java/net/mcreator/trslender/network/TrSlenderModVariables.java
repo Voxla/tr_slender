@@ -45,20 +45,20 @@ public class TrSlenderModVariables {
 	public static class EventBusVariableHandlers {
 		@SubscribeEvent
 		public static void onPlayerLoggedInSyncPlayerVariables(PlayerEvent.PlayerLoggedInEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getPlayer().level.isClientSide())
+				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerRespawnedSyncPlayerVariables(PlayerEvent.PlayerRespawnEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getPlayer().level.isClientSide())
+				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
 		}
 
 		@SubscribeEvent
 		public static void onPlayerChangedDimensionSyncPlayerVariables(PlayerEvent.PlayerChangedDimensionEvent event) {
-			if (!event.getEntity().level().isClientSide())
-				((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getEntity());
+			if (!event.getPlayer().level.isClientSide())
+				((PlayerVariables) event.getPlayer().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables())).syncPlayerVariables(event.getPlayer());
 		}
 
 		@SubscribeEvent
@@ -76,6 +76,8 @@ public class TrSlenderModVariables {
 				clone.pagecollected3and4 = original.pagecollected3and4;
 				clone.pagecollected5and6 = original.pagecollected5and6;
 				clone.pagecollected7 = original.pagecollected7;
+				clone.loopnumber = original.loopnumber;
+				clone.crazytimer = original.crazytimer;
 			}
 		}
 	}
@@ -120,6 +122,8 @@ public class TrSlenderModVariables {
 		public double pagecollected3and4 = 0;
 		public double pagecollected5and6 = 0;
 		public double pagecollected7 = 0;
+		public double loopnumber = 0;
+		public double crazytimer = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -137,6 +141,8 @@ public class TrSlenderModVariables {
 			nbt.putDouble("pagecollected3and4", pagecollected3and4);
 			nbt.putDouble("pagecollected5and6", pagecollected5and6);
 			nbt.putDouble("pagecollected7", pagecollected7);
+			nbt.putDouble("loopnumber", loopnumber);
+			nbt.putDouble("crazytimer", crazytimer);
 			return nbt;
 		}
 
@@ -151,6 +157,8 @@ public class TrSlenderModVariables {
 			pagecollected3and4 = nbt.getDouble("pagecollected3and4");
 			pagecollected5and6 = nbt.getDouble("pagecollected5and6");
 			pagecollected7 = nbt.getDouble("pagecollected7");
+			loopnumber = nbt.getDouble("loopnumber");
+			crazytimer = nbt.getDouble("crazytimer");
 		}
 	}
 
@@ -184,6 +192,8 @@ public class TrSlenderModVariables {
 					variables.pagecollected3and4 = message.data.pagecollected3and4;
 					variables.pagecollected5and6 = message.data.pagecollected5and6;
 					variables.pagecollected7 = message.data.pagecollected7;
+					variables.loopnumber = message.data.loopnumber;
+					variables.crazytimer = message.data.crazytimer;
 				}
 			});
 			context.setPacketHandled(true);

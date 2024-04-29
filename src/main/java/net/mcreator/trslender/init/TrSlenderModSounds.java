@@ -4,24 +4,39 @@
  */
 package net.mcreator.trslender.init;
 
-import net.minecraftforge.registries.RegistryObject;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
 
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 
-import net.mcreator.trslender.TrSlenderMod;
+import java.util.Map;
+import java.util.HashMap;
 
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TrSlenderModSounds {
-	public static final DeferredRegister<SoundEvent> REGISTRY = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, TrSlenderMod.MODID);
-	public static final RegistryObject<SoundEvent> PIANOSCARE = REGISTRY.register("pianoscare", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "pianoscare")));
-	public static final RegistryObject<SoundEvent> PAGEGRAB = REGISTRY.register("pagegrab", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "pagegrab")));
-	public static final RegistryObject<SoundEvent> PAGEHIT = REGISTRY.register("pagehit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "pagehit")));
-	public static final RegistryObject<SoundEvent> SLENDERSTATIC = REGISTRY.register("slenderstatic", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "slenderstatic")));
-	public static final RegistryObject<SoundEvent> PAGE1AND2 = REGISTRY.register("page1and2", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "page1and2")));
-	public static final RegistryObject<SoundEvent> PAGE3AND4 = REGISTRY.register("page3and4", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "page3and4")));
-	public static final RegistryObject<SoundEvent> PAGE5AND6 = REGISTRY.register("page5and6", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "page5and6")));
-	public static final RegistryObject<SoundEvent> PAGE7 = REGISTRY.register("page7", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "page7")));
-	public static final RegistryObject<SoundEvent> PONDER = REGISTRY.register("ponder", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("tr_slender", "ponder")));
+	public static Map<ResourceLocation, SoundEvent> REGISTRY = new HashMap<>();
+	static {
+		REGISTRY.put(new ResourceLocation("tr_slender", "pianoscare"), new SoundEvent(new ResourceLocation("tr_slender", "pianoscare")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "pagegrab"), new SoundEvent(new ResourceLocation("tr_slender", "pagegrab")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "pagehit"), new SoundEvent(new ResourceLocation("tr_slender", "pagehit")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "slenderstatic"), new SoundEvent(new ResourceLocation("tr_slender", "slenderstatic")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "page1and2"), new SoundEvent(new ResourceLocation("tr_slender", "page1and2")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "page3and4"), new SoundEvent(new ResourceLocation("tr_slender", "page3and4")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "page5and6"), new SoundEvent(new ResourceLocation("tr_slender", "page5and6")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "page7"), new SoundEvent(new ResourceLocation("tr_slender", "page7")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "ponder"), new SoundEvent(new ResourceLocation("tr_slender", "ponder")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "tainted_wood_break"), new SoundEvent(new ResourceLocation("tr_slender", "tainted_wood_break")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "tainted_wood_step"), new SoundEvent(new ResourceLocation("tr_slender", "tainted_wood_step")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "forest_wind"), new SoundEvent(new ResourceLocation("tr_slender", "forest_wind")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "tainted_grass_step"), new SoundEvent(new ResourceLocation("tr_slender", "tainted_grass_step")));
+		REGISTRY.put(new ResourceLocation("tr_slender", "forest_ambient"), new SoundEvent(new ResourceLocation("tr_slender", "forest_ambient")));
+	}
+
+	@SubscribeEvent
+	public static void registerSounds(RegistryEvent.Register<SoundEvent> event) {
+		for (Map.Entry<ResourceLocation, SoundEvent> sound : REGISTRY.entrySet())
+			event.getRegistry().register(sound.getValue().setRegistryName(sound.getKey()));
+	}
 }

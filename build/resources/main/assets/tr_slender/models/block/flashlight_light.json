@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "tr_slender:blocks/flashlightblock",
+    "up": "tr_slender:blocks/flashlightblock",
+    "north": "tr_slender:blocks/flashlightblock",
+    "east": "tr_slender:blocks/flashlightblock",
+    "south": "tr_slender:blocks/flashlightblock",
+    "west": "tr_slender:blocks/flashlightblock",
+    "particle": "tr_slender:blocks/flashlightblock"
+  }
+}

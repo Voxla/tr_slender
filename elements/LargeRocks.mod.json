@@ -5,9 +5,12 @@
     "restrictBiomes": [
       {
         "value": "CUSTOM:TaintedForest"
+      },
+      {
+        "value": "CUSTOM:TaintedForests"
       }
     ],
-    "structureStep": "Surface structures",
+    "structureStep": "Fluid springs",
     "terrainAdaptation": "Beard thin",
     "startHeightmap": "WORLD SURFACE",
     "structureRotation": true,
@@ -15,14 +18,14 @@
     "jigsawSize": 1,
     "absoluteHeight": 0,
     "distanceFromCenter": 32,
-    "minSpacingSeparation": 11,
-    "maxSpacingSeparation": 12,
+    "minSpacingSeparation": 4,
+    "maxSpacingSeparation": 20,
     "selectedStructure": "largerocks",
     "structuresWeight": 1,
     "structureSetPlacement": "Random spread",
     "templatesWeight": 1,
     "typeElement": "Single pool element",
     "typeProjection": "Rigid",
-    "adaptNoise": false
+    "adaptNoise": true
   }
 }

@@ -1,0 +1,2853 @@
+{
+  "mod_elements": [
+    {
+      "name": "SlendermanNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenderman_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/SlendermanNaturalEntitySpawningConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slenderman",
+      "type": "livingentity",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenderman",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/renderer/SlendermanRenderer.java",
+          "src/main/resources/assets/tr_slender/models/item/slenderman_spawn_egg.json",
+          "src/main/java/net/mcreator/trslender/entity/SlendermanEntity.java"
+        ]
+      }
+    },
+    {
+      "name": "SlenderStill",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slender_still",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/SlenderStillProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SlenderStatic",
+      "type": "potioneffect",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slender_static",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/potion/SlenderStaticMobEffect.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "SlenderStaticOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slender_static_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/SlenderStaticOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "SlenderStaticEffectExpires",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slender_static_effect_expires",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/SlenderStaticEffectExpiresProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Staticnormoverlay1",
+      "type": "overlay",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormoverlay_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticnormoverlay1Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormoverlay2",
+      "type": "overlay",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormoverlay_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticnormoverlay2Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormoverlay3",
+      "type": "overlay",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormoverlay_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticnormoverlay3Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormoverlay4",
+      "type": "overlay",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormoverlay_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticnormoverlay4Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormoverlay5",
+      "type": "overlay",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormoverlay_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticnormoverlay5Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticlowpacoverlay1",
+      "type": "overlay",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacoverlay_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpacoverlay1Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacoverlay2",
+      "type": "overlay",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacoverlay_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpacoverlay2Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacoverlay3",
+      "type": "overlay",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacoverlay_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpacoverlay3Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacoverlay",
+      "type": "overlay",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacoverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/StaticlowpacoverlayOverlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacoverlay5",
+      "type": "overlay",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacoverlay_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpacoverlay5Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacrender1",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacrender_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpacrender1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacrender2",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacrender_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpacrender2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacrender3",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacrender_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpacrender3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacrender4",
+      "type": "procedure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacrender_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpacrender4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticlowpacrender5",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpacrender_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpacrender5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpacoverlay"
+    },
+    {
+      "name": "Staticnormrender1",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormrender_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticnormrender1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormrender2",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormrender_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticnormrender2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormrender3",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormrender_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticnormrender3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormrender4",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormrender_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticnormrender4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Staticnormrender5",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticnormrender_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticnormrender5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Slenderoverlay",
+      "type": "overlay",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenderoverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/SlenderoverlayOverlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "Slenderoverlay1",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenderoverlay_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Slenderoverlay1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticnormoverlay"
+    },
+    {
+      "name": "SlendermanOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenderman_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/SlendermanOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Page",
+      "type": "block",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "page",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/block/page.json",
+          "src/main/resources/assets/tr_slender/blockstates/page.json",
+          "src/main/java/net/mcreator/trslender/block/PageBlock.java",
+          "src/main/resources/assets/tr_slender/models/item/page.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedForest",
+      "type": "biome",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_forest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/world/biome/TaintedForestBiome.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedWood",
+      "type": "block",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/item/tainted_wood.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_wood.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedWoodBlock.java",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_wood.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedLeaves",
+      "type": "block",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_leaves",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/item/tainted_leaves.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_leaves.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedLeavesBlock.java",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_leaves.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Logs",
+      "type": "tag",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "logs",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/logs.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "MidnightCurseOnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "midnight_curse_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/MidnightCurseOnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "MidnightCurse",
+      "type": "potioneffect",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "midnight_curse",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/potion/MidnightCurseMobEffect.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "SlendersDisappearEffect",
+      "type": "potioneffect",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenders_disappear_effect",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/potion/SlendersDisappearEffectMobEffect.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedTreeLargeAdditionalGenerationCondition",
+      "type": "procedure",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_tree_large_additional_generation_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/TaintedTreeLargeAdditionalGenerationConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaintedTreeLarge",
+      "type": "structure",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_tree_large",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/world/features/TaintedTreeLargeFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "TaintedTreeSmall",
+      "type": "structure",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_tree_small",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/world/features/TaintedTreeSmallFeature.java"
+        ]
+      }
+    },
+    {
+      "name": "TaintedLog",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_log",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/blockstates/tainted_log.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_log.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedLogBlock.java",
+          "src/main/resources/assets/tr_slender/models/item/tainted_log.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedPlanks",
+      "type": "block",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_planks",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/item/tainted_planks.json",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_planks.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_planks.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedPlanksBlock.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "StrippedTaintedLog",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_tainted_log",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/block/StrippedTaintedLogBlock.java",
+          "src/main/resources/assets/tr_slender/blockstates/stripped_tainted_log.json",
+          "src/main/resources/assets/tr_slender/models/item/stripped_tainted_log.json",
+          "src/main/resources/assets/tr_slender/models/block/stripped_tainted_log.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "StrippedTaintedWood",
+      "type": "block",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_tainted_wood",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/item/stripped_tainted_wood.json",
+          "src/main/resources/assets/tr_slender/models/block/stripped_tainted_wood.json",
+          "src/main/resources/assets/tr_slender/blockstates/stripped_tainted_wood.json",
+          "src/main/java/net/mcreator/trslender/block/StrippedTaintedWoodBlock.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedLogOnBlockRightClicked",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_log_on_block_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/TaintedLogOnBlockRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedStairs",
+      "type": "block",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_stairs",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/block/tainted_stairs.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_stairs_outer.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_stairs_inner.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedStairsBlock.java",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_stairs.json",
+          "src/main/resources/assets/tr_slender/models/item/tainted_stairs.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedDoor",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_door",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/blockstates/tainted_door.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedDoorBlock.java",
+          "src/main/resources/assets/tr_slender/models/item/tainted_door.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_door_top.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_door_top_hinge.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_door_bottom.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_door_bottom_hinge.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedTrapdoor",
+      "type": "block",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_trapdoor",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/block/tainted_trapdoor_open.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedTrapdoorBlock.java",
+          "src/main/resources/assets/tr_slender/models/block/tainted_trapdoor_top.json",
+          "src/main/resources/assets/tr_slender/models/item/tainted_trapdoor.json",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_trapdoor.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_trapdoor.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Tankers",
+      "type": "restructure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tankers",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/structure_set/tankers.json",
+          "src/main/resources/data/tr_slender/worldgen/template_pool/tankers.json",
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/tankers.json"
+        ]
+      }
+    },
+    {
+      "name": "Bathrooms4",
+      "type": "restructure",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bathrooms_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/structure_set/bathrooms4.json",
+          "src/main/resources/data/tr_slender/worldgen/template_pool/bathrooms4.json",
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/bathrooms4.json"
+        ]
+      }
+    },
+    {
+      "name": "Silo",
+      "type": "restructure",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silo",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/template_pool/silo.json",
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/silo.json",
+          "src/main/resources/data/tr_slender/worldgen/structure_set/silo.json"
+        ]
+      }
+    },
+    {
+      "name": "Tunnel",
+      "type": "restructure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tunnel",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/structure_set/tunnel.json",
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/tunnel.json",
+          "src/main/resources/data/tr_slender/worldgen/template_pool/tunnel.json"
+        ]
+      }
+    },
+    {
+      "name": "LargeRocks",
+      "type": "restructure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "large_rocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/template_pool/largerocks.json",
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/largerocks.json",
+          "src/main/resources/data/tr_slender/worldgen/structure_set/largerocks.json"
+        ]
+      }
+    },
+    {
+      "name": "Crosswalls",
+      "type": "restructure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crosswalls",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/crosswalls.json",
+          "src/main/resources/data/tr_slender/worldgen/structure_set/crosswalls.json",
+          "src/main/resources/data/tr_slender/worldgen/template_pool/crosswalls.json"
+        ]
+      }
+    },
+    {
+      "name": "TaintedFence",
+      "type": "block",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_fence",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/blockstates/tainted_fence.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_fence_inventory.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_fence.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_fence_post.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedFenceBlock.java",
+          "src/main/resources/assets/tr_slender/models/item/tainted_fence.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "FenceBlocks",
+      "type": "tag",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fence_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/fences.json"
+        ]
+      }
+    },
+    {
+      "name": "TaintedFenceGate",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_fence_gate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/block/tainted_fence_gate.json",
+          "src/main/resources/assets/tr_slender/models/item/tainted_fence_gate.json",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_fence_gate.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedFenceGateBlock.java",
+          "src/main/resources/assets/tr_slender/models/block/tainted_fence_gate_wall_open.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_fence_gate_wall.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_fence_gate_open.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedSlab",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_slab",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/item/tainted_slab.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_slab_full.json",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_slab.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedSlabBlock.java",
+          "src/main/resources/assets/tr_slender/models/block/tainted_slab.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_slab_top.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedtreepage",
+      "type": "restructure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedtreepage",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/structure_set/taintedtreepage.json",
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/taintedtreepage.json",
+          "src/main/resources/data/tr_slender/worldgen/template_pool/taintedtreepage.json"
+        ]
+      }
+    },
+    {
+      "name": "Wagon",
+      "type": "restructure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wagon",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/wagon.json",
+          "src/main/resources/data/tr_slender/worldgen/template_pool/wagon.json",
+          "src/main/resources/data/tr_slender/worldgen/structure_set/wagon.json"
+        ]
+      }
+    },
+    {
+      "name": "OldHut",
+      "type": "restructure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "old_hut",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/worldgen/template_pool/oldhut.json",
+          "src/main/resources/data/tr_slender/worldgen/configured_structure_feature/oldhut.json",
+          "src/main/resources/data/tr_slender/worldgen/structure_set/oldhut.json"
+        ]
+      }
+    },
+    {
+      "name": "TaintedButton",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_button",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/blockstates/tainted_button.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_button_pressed.json",
+          "src/main/resources/assets/tr_slender/models/item/tainted_button.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedButtonBlock.java",
+          "src/main/resources/assets/tr_slender/models/block/tainted_button.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_button_inventory.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "TaintedPressurePlate",
+      "type": "block",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_pressure_plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/block/tainted_pressure_plate.json",
+          "src/main/resources/assets/tr_slender/models/item/tainted_pressure_plate.json",
+          "src/main/resources/assets/tr_slender/blockstates/tainted_pressure_plate.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_pressure_plate_down.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedPressurePlateBlock.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedtrapdoorcraft",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedtrapdoorcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedtrapdoorcraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Tainteddoorcraft",
+      "type": "recipe",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainteddoorcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/tainteddoorcraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedplankscraftwood",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedplankscraftwood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedplankscraftwood.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedplankscraftlog",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedplankscraftlog",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedplankscraftlog.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedplankscraftstrippedlog",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedplankscraftstrippedlog",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedplankscraftstrippedlog.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedplankscraftstrippedwood",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedplankscraftstrippedwood",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedplankscraftstrippedwood.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedwoodcraft",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedwoodcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedwoodcraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedstrippedwoodcraft",
+      "type": "recipe",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedstrippedwoodcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedstrippedwoodcraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedstairscraft",
+      "type": "recipe",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedstairscraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedstairscraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedslabcraft",
+      "type": "recipe",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedslabcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedslabcraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedfencegatecraft",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedfencegatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedfencegatecraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedbuttomcraft",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedbuttomcraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedbuttomcraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedpressureplatecraft",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedpressureplatecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedpressureplatecraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Taintedfencecraft",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "taintedfencecraft",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/taintedfencecraft.json"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "PlankItems",
+      "type": "tag",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "plank_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/planks.json"
+        ]
+      }
+    },
+    {
+      "name": "LogItems",
+      "type": "tag",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "log_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/logs.json"
+        ]
+      }
+    },
+    {
+      "name": "WoodenSlabItems",
+      "type": "tag",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_slab_items",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/items/wooden_slabs.json"
+        ]
+      }
+    },
+    {
+      "name": "Staticlowpac2overlay1",
+      "type": "overlay",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_2overlay_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac2overlay1Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpac2overlay2",
+      "type": "overlay",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_2overlay_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac2overlay2Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpac2overlay3",
+      "type": "overlay",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_2overlay_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac2overlay3Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpac2overlay4",
+      "type": "overlay",
+      "sortid": 120,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_2overlay_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac2overlay4Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpac2overlay5",
+      "type": "overlay",
+      "sortid": 121,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_2overlay_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac2overlay5Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpac1overlay1",
+      "type": "overlay",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_1overlay_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac1overlay1Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpac1overlay2",
+      "type": "overlay",
+      "sortid": 123,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_1overlay_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac1overlay2Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpac1overlay3",
+      "type": "overlay",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_1overlay_3",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac1overlay3Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpac1overlay4",
+      "type": "overlay",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_1overlay_4",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac1overlay4Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpac1overlay5",
+      "type": "overlay",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpac_1overlay_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/client/gui/Staticlowpac1overlay5Overlay.java"
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpack2overlayproc1",
+      "type": "procedure",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_2overlayproc_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack2overlayproc1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpack2overlayproc2",
+      "type": "procedure",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_2overlayproc_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack2overlayproc2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpack2overlayproc3",
+      "type": "procedure",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_2overlayproc_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack2overlayproc3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpack2overlayproc4",
+      "type": "procedure",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_2overlayproc_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack2overlayproc4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpack2overlayproc5",
+      "type": "procedure",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_2overlayproc_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack2overlayproc5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac2overlay"
+    },
+    {
+      "name": "Staticlowpack1overlayproc1",
+      "type": "procedure",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_1overlayproc_1",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack1overlayproc1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpack1overlayproc2",
+      "type": "procedure",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_1overlayproc_2",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack1overlayproc2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpack1overlayproc3",
+      "type": "procedure",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_1overlayproc_3",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack1overlayproc3Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpack1overlayproc4",
+      "type": "procedure",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_1overlayproc_4",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack1overlayproc4Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "Staticlowpack1overlayproc5",
+      "type": "procedure",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "staticlowpack_1overlayproc_5",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/Staticlowpack1overlayproc5Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Overlays/Staticlowpac1overlay"
+    },
+    {
+      "name": "SlendermanEntityIsHurt",
+      "type": "procedure",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenderman_entity_is_hurt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/SlendermanEntityIsHurtProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProxyPanic",
+      "type": "procedure",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxy_panic",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/ProxyPanicProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Proxy",
+      "type": "livingentity",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxy",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/entity/ProxyEntity.java",
+          "src/main/resources/assets/tr_slender/models/item/proxy_spawn_egg.json",
+          "src/main/java/net/mcreator/trslender/client/renderer/ProxyRenderer.java"
+        ]
+      }
+    },
+    {
+      "name": "ProxyOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxy_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/ProxyOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProxyJumpAtPlayer",
+      "type": "procedure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxy_jump_at_player",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/ProxyJumpAtPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Playerdiesnearslender",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerdiesnearslender",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/PlayerdiesnearslenderProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProxyEntityDies",
+      "type": "procedure",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxy_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/ProxyEntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hallucinations",
+      "type": "potioneffect",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hallucinations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/potion/HallucinationsMobEffect.java"
+        ]
+      }
+    },
+    {
+      "name": "HallucinationsEffects1OnEffectActiveTick",
+      "type": "procedure",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hallucinations_effects_1_on_effect_active_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/HallucinationsEffects1OnEffectActiveTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlashlightLightBlockAdded",
+      "type": "procedure",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_light_block_added",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/FlashlightLightBlockAddedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlashlightStuff/Blocks"
+    },
+    {
+      "name": "FlashlightLightUpdateTick",
+      "type": "procedure",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_light_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/FlashlightLightUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlashlightStuff/Blocks"
+    },
+    {
+      "name": "FlashlightLight",
+      "type": "block",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_light",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/block/FlashlightLightBlock.java",
+          "src/main/resources/assets/tr_slender/models/item/flashlight_light.json",
+          "src/main/java/net/mcreator/trslender/block/entity/FlashlightLightBlockEntity.java",
+          "src/main/resources/assets/tr_slender/blockstates/flashlight_light.json",
+          "src/main/resources/assets/tr_slender/models/block/flashlight_light.json"
+        ]
+      },
+      "path": "~/FlashlightStuff/Blocks"
+    },
+    {
+      "name": "FlashlightOn",
+      "type": "item",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/models/item/flashlight_on.json",
+          "src/main/java/net/mcreator/trslender/item/FlashlightOnItem.java"
+        ]
+      },
+      "path": "~/FlashlightStuff/Items"
+    },
+    {
+      "name": "FlashlightOff",
+      "type": "item",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_off",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/item/FlashlightOffItem.java",
+          "src/main/resources/assets/tr_slender/models/item/flashlight_off.json"
+        ]
+      },
+      "path": "~/FlashlightStuff/Items"
+    },
+    {
+      "name": "FlashlightOnRightclicked",
+      "type": "procedure",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/FlashlightOnRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlashlightStuff/Items"
+    },
+    {
+      "name": "FlashlightOnItemInHandTick",
+      "type": "procedure",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_on_item_in_hand_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/FlashlightOnItemInHandTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlashlightStuff/Items"
+    },
+    {
+      "name": "FlashlightOffRightclicked",
+      "type": "procedure",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_off_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/FlashlightOffRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/FlashlightStuff/Items"
+    },
+    {
+      "name": "SlenderTheEightPagesMode",
+      "type": "gamerule",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slender_the_eight_pages_mode",
+      "metadata": {
+        "files": [],
+        "type": "logic"
+      }
+    },
+    {
+      "name": "SlenderGamemode",
+      "type": "dimension",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slender_gamemode",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/dimension/slender_gamemode.json",
+          "src/main/resources/data/tr_slender/dimension_type/slender_gamemode.json",
+          "src/main/java/net/mcreator/trslender/world/dimension/SlenderGamemodeDimension.java"
+        ]
+      }
+    },
+    {
+      "name": "FlashlightRecipe",
+      "type": "recipe",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flashlight_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/recipes/flashlight_recipe.json"
+        ]
+      }
+    },
+    {
+      "name": "SlenderGamemodePlayerEntersDimension",
+      "type": "procedure",
+      "sortid": 172,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slender_gamemode_player_enters_dimension",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/SlenderGamemodePlayerEntersDimensionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ProxyNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 173,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "proxy_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/ProxyNaturalEntitySpawningConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hoodie",
+      "type": "livingentity",
+      "sortid": 174,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoodie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/entity/HoodieEntity.java",
+          "src/main/java/net/mcreator/trslender/client/renderer/HoodieRenderer.java",
+          "src/main/resources/assets/tr_slender/models/item/hoodie_spawn_egg.json"
+        ]
+      }
+    },
+    {
+      "name": "HoodieNaturalEntitySpawningCondition",
+      "type": "procedure",
+      "sortid": 175,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoodie_natural_entity_spawning_condition",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/HoodieNaturalEntitySpawningConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoodieOnInitialEntitySpawn",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoodie_on_initial_entity_spawn",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/HoodieOnInitialEntitySpawnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoodieOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoodie_on_entity_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/HoodieOnEntityTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Hoodieavoidproc",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoodieavoidproc",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/HoodieavoidprocProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoodieAttackProc",
+      "type": "procedure",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hoodie_attack_proc",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/HoodieAttackProcProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TaintedForests",
+      "type": "biome",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_forests",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/world/biome/TaintedForestsBiome.java"
+        ]
+      },
+      "path": "~/Overlays"
+    },
+    {
+      "name": "Playerishurtbyhoodie",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "playerishurtbyhoodie",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/trslender/procedures/PlayerishurtbyhoodieProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Slenderforesttags",
+      "type": "tag",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "slenderforesttags",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/tr_slender/tags/worldgen/biome/slenderforesttags.json"
+        ]
+      }
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_blocks",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/minecraft/tags/blocks/dirt.json"
+        ]
+      }
+    },
+    {
+      "name": "TaintedGrassBlock",
+      "type": "block",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tainted_grass_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/tr_slender/blockstates/tainted_grass_block.json",
+          "src/main/resources/assets/tr_slender/models/item/tainted_grass_block.json",
+          "src/main/resources/assets/tr_slender/models/block/tainted_grass_block.json",
+          "src/main/java/net/mcreator/trslender/block/TaintedGrassBlockBlock.java"
+        ]
+      },
+      "path": "~/Overlays"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "staticnorm",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "staticlowpac",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "pondermusicnumber",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "playerpagenumber",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "playerslendermusictimer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "pagecollected1and2",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "pagecollected3and4",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "pagecollected5and6",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "pagecollected7",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "loopnumber",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    },
+    {
+      "name": "crazytimer",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [
+    {
+      "name": "pianoscare",
+      "files": [
+        "pianoscare"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "pagegrab",
+      "files": [
+        "pagegrab"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "pagehit",
+      "files": [
+        "pagehit"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "slenderstatic",
+      "files": [
+        "slendermanstaticsound"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "page1and2",
+      "files": [
+        "page1and2"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "page3and4",
+      "files": [
+        "page3and4"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "page5and6",
+      "files": [
+        "page5and6"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "page7",
+      "files": [
+        "page7"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "ponder",
+      "files": [
+        "ponder"
+      ],
+      "category": "record",
+      "subtitle": ""
+    },
+    {
+      "name": "tainted_wood_break",
+      "files": [
+        "tainted_wood_break1",
+        "tainted_wood_break2",
+        "tainted_wood_break3",
+        "tainted_wood_break4",
+        "tainted_wood_break5"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "tainted_wood_step",
+      "files": [
+        "tainted_wood_step1",
+        "tainted_wood_step2",
+        "tainted_wood_step3",
+        "tainted_wood_step4",
+        "tainted_wood_step5",
+        "tainted_wood_step6"
+      ],
+      "category": "block",
+      "subtitle": ""
+    },
+    {
+      "name": "forest_ambient",
+      "files": [
+        "forestambient1",
+        "forestambient2",
+        "forestambient3"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    },
+    {
+      "name": "forest_wind",
+      "files": [
+        "wind"
+      ],
+      "category": "ambient",
+      "subtitle": ""
+    },
+    {
+      "name": "tainted_grass_step",
+      "files": [
+        "tainted_grass_step1",
+        "tainted_grass_step2",
+        "tainted_grass_step3",
+        "tainted_grass_step4",
+        "tainted_grass_step5",
+        "tainted_grass_step6",
+        "tainted_grass_step7",
+        "tainted_grass_step8",
+        "tainted_grass_step9",
+        "tainted_grass_step10"
+      ],
+      "category": "block",
+      "subtitle": ""
+    }
+  ],
+  "language_map": {
+    "en_us": {
+      "subtitles.tainted_wood_break": "",
+      "subtitles.page5and6": "",
+      "block.tr_slender.tainted_grass_block": "Tainted Grass Block",
+      "block.tr_slender.stripped_tainted_log": "Tainted Log",
+      "gamerule.slenderTheEightPagesMode": "Slender: The Eight Pages Mode",
+      "subtitles.slenderstatic": "",
+      "block.tr_slender.page": "Page",
+      "block.tr_slender.tainted_button": "Tainted Button",
+      "subtitles.ponder": "",
+      "effect.tr_slender.hallucinations": "Hallucinations",
+      "subtitles.tainted_grass_step": "",
+      "block.tr_slender.tainted_planks": "Tainted Planks",
+      "block.tr_slender.tainted_trapdoor": "Tainted Trapdoor",
+      "subtitles.page1and2": "",
+      "subtitles.page7": "",
+      "effect.tr_slender.slender_static": "Slender Static",
+      "block.tr_slender.tainted_fence_gate": "Tainted Fence Gate",
+      "item.tr_slender.flashlight_off": "Flashlight",
+      "biome.tr_slender.tainted_forest": "Tainted Forest",
+      "block.tr_slender.tainted_fence": "Tainted Fence",
+      "entity.tr_slender.hoodie": "Hoodie",
+      "item.tr_slender.flashlight_on": "Flashlight",
+      "block.tr_slender.tainted_stairs": "Tainted Stairs",
+      "subtitles.forest_wind": "",
+      "biome.tr_slender.tainted_forests": "Tainted Forest",
+      "subtitles.pianoscare": "",
+      "block.tr_slender.tainted_slab": "Tainted Slab",
+      "subtitles.pagehit": "",
+      "block.tr_slender.tainted_door": "Tainted Door",
+      "effect.tr_slender.slenders_disappear_effect": "SlendersDisappearEffect",
+      "block.tr_slender.tainted_pressure_plate": "Tainted Pressure Plate",
+      "item.tr_slender.slenderman_spawn_egg": "Slenderman Spawn Egg",
+      "item.tr_slender.proxy_spawn_egg": "Proxy Spawn Egg",
+      "item.tr_slender.hoodie_spawn_egg": "Hoodie Spawn Egg",
+      "subtitles.pagegrab": "",
+      "effect.tr_slender.midnight_curse": "Midnight Curse",
+      "entity.tr_slender.proxy": "Proxy",
+      "gamerule.slenderTheEightPagesMode.description": "When set to true the player will be brought to the Slender forest and must find all 8 pages.",
+      "entity.tr_slender.slenderman": "Slenderman",
+      "subtitles.page3and4": "",
+      "subtitles.forest_ambient": "",
+      "block.tr_slender.stripped_tainted_wood": "Tainted Log",
+      "block.tr_slender.tainted_leaves": "Tainted Leaves",
+      "subtitles.tainted_wood_step": "",
+      "block.tr_slender.flashlight_light": "Flashlight Light",
+      "block.tr_slender.tainted_wood": "Tainted Wood",
+      "block.tr_slender.tainted_log": "Tainted Log"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Overlays",
+        "children": [
+          {
+            "name": "Staticnormoverlay",
+            "children": []
+          },
+          {
+            "name": "Staticlowpacoverlay",
+            "children": []
+          },
+          {
+            "name": "Staticlowpac1overlay",
+            "children": []
+          },
+          {
+            "name": "Staticlowpac2overlay",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "FlashlightStuff",
+        "children": [
+          {
+            "name": "Items",
+            "children": []
+          },
+          {
+            "name": "Blocks",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "tr_slender",
+    "modName": "The Rise of Slender",
+    "version": "0.9.00",
+    "description": "A mod that tries to bring Slender: The Eight Pages into Minecraft.",
+    "author": "Voxla",
+    "websiteURL": "https://www.curseforge.com/members/voxla/projects",
+    "license": "MIT License",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "trsicon",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Mod made by Voxla - Created using mod maker MCreator",
+    "modElementsPackage": "net.mcreator.trslender",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202300336712
+}

@@ -1,7 +1,5 @@
 package net.mcreator.trslender.procedures;
 
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-
 import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.EntityHitResult;
@@ -9,7 +7,6 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.Mob;
@@ -17,22 +14,20 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.util.RandomSource;
 import net.minecraft.util.Mth;
+import net.minecraft.tags.TagKey;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.registries.Registries;
+import net.minecraft.core.Registry;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 import net.minecraft.commands.arguments.EntityAnchorArgument;
 
 import net.mcreator.trslender.network.TrSlenderModVariables;
 import net.mcreator.trslender.init.TrSlenderModMobEffects;
-import net.mcreator.trslender.init.TrSlenderModBlocks;
 
-import java.util.concurrent.atomic.AtomicReference;
+import java.util.Random;
 import java.util.Comparator;
 
 public class SlendermanOnEntityTickUpdateProcedure {
@@ -55,7 +50,7 @@ public class SlendermanOnEntityTickUpdateProcedure {
 						double blockReach = 5;
 						if (distance > blockReach * blockReach) {
 							Vec3 pos = hitResult.getLocation();
-							hitResult = BlockHitResult.miss(pos, Direction.getNearest(eyePos.x, eyePos.y, eyePos.z), BlockPos.containing(pos));
+							hitResult = BlockHitResult.miss(pos, Direction.getNearest(eyePos.x, eyePos.y, eyePos.z), new BlockPos(pos));
 						}
 					}
 					Vec3 viewVec = player.getViewVector(1.0F);
@@ -69,7 +64,7 @@ public class SlendermanOnEntityTickUpdateProcedure {
 						Vec3 targetPos = entityhitresult.getLocation();
 						double distanceToTarget = eyePos.distanceToSqr(targetPos);
 						if (distanceToTarget > distance || distanceToTarget > entityReach * entityReach) {
-							hitResult = BlockHitResult.miss(targetPos, Direction.getNearest(viewVec.x, viewVec.y, viewVec.z), BlockPos.containing(targetPos));
+							hitResult = BlockHitResult.miss(targetPos, Direction.getNearest(viewVec.x, viewVec.y, viewVec.z), new BlockPos(targetPos));
 						} else if (distanceToTarget < distance) {
 							hitResult = entityhitresult;
 						}
@@ -84,147 +79,111 @@ public class SlendermanOnEntityTickUpdateProcedure {
 					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level().isClientSide())
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(TrSlenderModMobEffects.SLENDER_STATIC.get(), 20, 0, false, false));
 			}
 		}
 		if ((entity instanceof LivingEntity _livEnt && _livEnt.hasEffect(TrSlenderModMobEffects.SLENDERS_DISAPPEAR_EFFECT.get()) ? _livEnt.getEffect(TrSlenderModMobEffects.SLENDERS_DISAPPEAR_EFFECT.get()).getDuration() : 0) == 1) {
-			if (!world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (!entity.level().isClientSide())
-					entity.discard();
-			}
-			if (itemNum >= 8) {
-				if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-					if (!entity.level().isClientSide())
-						entity.discard();
-				}
-			}
-		}
-		loopNum = 0;
-		itemNum = 0;
-		for (int index0 = 0; index0 < 36; index0++) {
-			if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).isEmpty()) {
-				if (TrSlenderModBlocks.PAGE.get().asItem() == (new Object() {
-					public ItemStack getItemStack(int sltid, Entity entity) {
-						AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-						entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-							_retval.set(capability.getStackInSlot(sltid).copy());
-						});
-						return _retval.get();
-					}
-				}.getItemStack((int) loopNum, ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getItem()) {
-					itemNum = itemNum + (new Object() {
-						public ItemStack getItemStack(int sltid, Entity entity) {
-							AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
-							entity.getCapability(ForgeCapabilities.ITEM_HANDLER, null).ifPresent(capability -> {
-								_retval.set(capability.getStackInSlot(sltid).copy());
-							});
-							return _retval.get();
-						}
-					}.getItemStack((int) loopNum, ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)))).getCount();
-				}
-			}
-			loopNum = loopNum + 1;
+			if (!entity.level.isClientSide())
+				entity.discard();
 		}
 		if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).isEmpty()) {
-			{
-				double _setval = itemNum;
-				((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)).getCapability(TrSlenderModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-					capability.playerpagenumber = _setval;
-					capability.syncPlayerVariables(((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)));
-				});
-			}
+			itemNum = (((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).stream().sorted(new Object() {
+				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
+				}
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getCapability(TrSlenderModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TrSlenderModVariables.PlayerVariables())).playerpagenumber;
 		}
 		if (itemNum >= 8) {
-			if (!world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (!world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 14, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 100);
 			}
 		} else if (itemNum == 7) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 12, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 150);
 			}
 		} else if (itemNum == 6) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 10, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 250);
 			}
 		} else if (itemNum == 5) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 7, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 400);
 			}
 		} else if (itemNum == 4) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 5, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 600);
 			}
 		} else if (itemNum == 3) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 4, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 700);
 			}
 		} else if (itemNum == 2) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 3, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 900);
 			}
 		} else if (itemNum == 1) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3, 2, false, false));
 			}
 			if (entity.getPersistentData().getDouble("slenderteleporttimer") == 0) {
 				entity.getPersistentData().putDouble("slenderteleporttimer", 1100);
 			}
 		}
+		if (!world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+			if (itemNum < 8) {
+				if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					if (!entity.level.isClientSide())
+						entity.discard();
+				}
+			}
+		}
+		if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+			if (itemNum >= 8) {
+				if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 10, 10, 10), e -> true).isEmpty()) {
+					if (!entity.level.isClientSide())
+						entity.discard();
+				}
+			}
+		}
 		if (!(itemNum >= 8)) {
-			if (!world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (!world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3, 255, false, false));
 			}
 		}
 		if (itemNum >= 8) {
-			if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
-				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+			if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
+				if (entity instanceof LivingEntity _entity && !_entity.level.isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 3, 255, false, false));
 			}
 		}
@@ -233,19 +192,19 @@ public class SlendermanOnEntityTickUpdateProcedure {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getX() + Mth.nextInt(RandomSource.create(), -20, 20);
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getX() + Mth.nextInt(new Random(), -20, 20);
 			teleportZpos = ((Entity) world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).stream().sorted(new Object() {
 				Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 					return Comparator.comparingDouble(_entcnd -> _entcnd.distanceToSqr(_x, _y, _z));
 				}
-			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getZ() + Mth.nextInt(RandomSource.create(), -20, 20);
+			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getZ() + Mth.nextInt(new Random(), -20, 20);
 		}
 		if (entity.getPersistentData().getDouble("slenderteleporttimer") > 0) {
 			entity.getPersistentData().putDouble("slenderteleporttimer", (entity.getPersistentData().getDouble("slenderteleporttimer") - 1));
 		}
 		if (entity.getPersistentData().getDouble("slenderteleporttimer") == 1) {
 			if (itemNum >= 8) {
-				if (!world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
+				if (!world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
 					if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).isEmpty() && !(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 20, 20, 20), e -> true).isEmpty())) {
 						{
 							Entity _ent = entity;
@@ -256,7 +215,7 @@ public class SlendermanOnEntityTickUpdateProcedure {
 					}
 				}
 			} else if (itemNum < 8) {
-				if (world.getBiome(BlockPos.containing(x, y, z)).is(new ResourceLocation("tr_slender:tainted_forest"))) {
+				if (world.getBiome(new BlockPos(x, y, z)).is(TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation("tr_slender:slenderforesttags")))) {
 					if (!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 400, 400, 400), e -> true).isEmpty() && !(!world.getEntitiesOfClass(Player.class, AABB.ofSize(new Vec3(x, y, z), 20, 20, 20), e -> true).isEmpty())) {
 						{
 							Entity _ent = entity;
@@ -284,7 +243,7 @@ public class SlendermanOnEntityTickUpdateProcedure {
 			}.compareDistOf(x, y, z)).findFirst().orElse(null)).getZ())));
 		}
 		if (entity.isPassenger()) {
-			(entity.getVehicle()).hurt(new DamageSource(world.registryAccess().registryOrThrow(Registries.DAMAGE_TYPE).getHolderOrThrow(DamageTypes.FELL_OUT_OF_WORLD)), 200);
+			(entity.getVehicle()).hurt(DamageSource.OUT_OF_WORLD, 200);
 			if (entity.isPassenger()) {
 				entity.stopRiding();
 			}

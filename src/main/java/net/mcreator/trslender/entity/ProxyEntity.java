@@ -4,7 +4,12 @@ package net.mcreator.trslender.entity;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
 
+import net.minecraft.world.level.levelgen.Heightmap;
+import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.projectile.ThrownPotion;
 import net.minecraft.world.entity.player.Player;
@@ -19,42 +24,51 @@ import net.minecraft.world.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
+import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.AreaEffectCloud;
-import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
-import net.minecraft.network.chat.Component;
 
 import net.mcreator.trslender.procedures.ProxyPanicProcedure;
 import net.mcreator.trslender.procedures.ProxyOnEntityTickUpdateProcedure;
+import net.mcreator.trslender.procedures.ProxyNaturalEntitySpawningConditionProcedure;
 import net.mcreator.trslender.procedures.ProxyJumpAtPlayerProcedure;
 import net.mcreator.trslender.procedures.ProxyEntityDiesProcedure;
 import net.mcreator.trslender.init.TrSlenderModEntities;
 
+import java.util.Set;
+
+@Mod.EventBusSubscriber
 public class ProxyEntity extends Monster {
+	private static final Set<ResourceLocation> SPAWN_BIOMES = Set.of(new ResourceLocation("tr_slender:tainted_forests"), new ResourceLocation("tr_slender:tainted_forest"));
+
+	@SubscribeEvent
+	public static void addLivingEntityToBiomes(BiomeLoadingEvent event) {
+		if (SPAWN_BIOMES.contains(event.getName()))
+			event.getSpawns().getSpawner(MobCategory.MONSTER).add(new MobSpawnSettings.SpawnerData(TrSlenderModEntities.PROXY.get(), 20, 1, 1));
+	}
+
 	public ProxyEntity(PlayMessages.SpawnEntity packet, Level world) {
 		this(TrSlenderModEntities.PROXY.get(), world);
 	}
 
 	public ProxyEntity(EntityType<ProxyEntity> type, Level world) {
 		super(type, world);
-		setMaxUpStep(0.6f);
+		maxUpStep = 0.6f;
 		xpReward = 0;
 		setNoAi(false);
-		setCustomName(Component.literal("Proxy"));
-		setCustomNameVisible(true);
 	}
 
 	@Override
-	public Packet<ClientGamePacketListener> getAddEntityPacket() {
+	public Packet<?> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -68,7 +82,7 @@ public class ProxyEntity extends Monster {
 				double y = ProxyEntity.this.getY();
 				double z = ProxyEntity.this.getZ();
 				Entity entity = ProxyEntity.this;
-				Level world = ProxyEntity.this.level();
+				Level world = ProxyEntity.this.level;
 				return super.canUse() && ProxyPanicProcedure.execute(entity);
 			}
 
@@ -78,7 +92,7 @@ public class ProxyEntity extends Monster {
 				double y = ProxyEntity.this.getY();
 				double z = ProxyEntity.this.getZ();
 				Entity entity = ProxyEntity.this;
-				Level world = ProxyEntity.this.level();
+				Level world = ProxyEntity.this.level;
 				return super.canContinueToUse() && ProxyPanicProcedure.execute(entity);
 			}
 		});
@@ -86,7 +100,7 @@ public class ProxyEntity extends Monster {
 		this.goalSelector.addGoal(3, new MeleeAttackGoal(this, 1.2, true) {
 			@Override
 			protected double getAttackReachSqr(LivingEntity entity) {
-				return this.mob.getBbWidth() * this.mob.getBbWidth() + entity.getBbWidth();
+				return 4;
 			}
 		});
 		this.goalSelector.addGoal(4, new RandomStrollGoal(this, 1));
@@ -98,7 +112,7 @@ public class ProxyEntity extends Monster {
 				double y = ProxyEntity.this.getY();
 				double z = ProxyEntity.this.getZ();
 				Entity entity = ProxyEntity.this;
-				Level world = ProxyEntity.this.level();
+				Level world = ProxyEntity.this.level;
 				return super.canUse() && ProxyJumpAtPlayerProcedure.execute(world, x, y, z);
 			}
 
@@ -108,7 +122,7 @@ public class ProxyEntity extends Monster {
 				double y = ProxyEntity.this.getY();
 				double z = ProxyEntity.this.getZ();
 				Entity entity = ProxyEntity.this;
-				Level world = ProxyEntity.this.level();
+				Level world = ProxyEntity.this.level;
 				return super.canContinueToUse() && ProxyJumpAtPlayerProcedure.execute(world, x, y, z);
 			}
 		});
@@ -140,13 +154,13 @@ public class ProxyEntity extends Monster {
 	public boolean hurt(DamageSource source, float amount) {
 		if (source.getDirectEntity() instanceof ThrownPotion || source.getDirectEntity() instanceof AreaEffectCloud)
 			return false;
-		if (source.is(DamageTypes.DROWN))
+		if (source == DamageSource.DROWN)
 			return false;
-		if (source.is(DamageTypes.DRAGON_BREATH))
+		if (source == DamageSource.DRAGON_BREATH)
 			return false;
-		if (source.is(DamageTypes.WITHER))
+		if (source == DamageSource.WITHER)
 			return false;
-		if (source.is(DamageTypes.WITHER_SKULL))
+		if (source.getMsgId().equals("witherSkull"))
 			return false;
 		return super.hurt(source, amount);
 	}
@@ -154,16 +168,22 @@ public class ProxyEntity extends Monster {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		ProxyEntityDiesProcedure.execute(this.level(), this);
+		ProxyEntityDiesProcedure.execute(this.level, this);
 	}
 
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		ProxyOnEntityTickUpdateProcedure.execute(this.level(), this);
+		ProxyOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	public static void init() {
+		SpawnPlacements.register(TrSlenderModEntities.PROXY.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			return ProxyNaturalEntitySpawningConditionProcedure.execute(world, x, y, z);
+		});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

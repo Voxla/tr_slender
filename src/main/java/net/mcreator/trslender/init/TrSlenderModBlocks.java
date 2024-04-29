@@ -7,9 +7,10 @@ package net.mcreator.trslender.init;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.RegisterColorHandlersEvent;
+import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.Block;
@@ -22,6 +23,7 @@ import net.mcreator.trslender.block.TaintedPressurePlateBlock;
 import net.mcreator.trslender.block.TaintedPlanksBlock;
 import net.mcreator.trslender.block.TaintedLogBlock;
 import net.mcreator.trslender.block.TaintedLeavesBlock;
+import net.mcreator.trslender.block.TaintedGrassBlockBlock;
 import net.mcreator.trslender.block.TaintedFenceGateBlock;
 import net.mcreator.trslender.block.TaintedFenceBlock;
 import net.mcreator.trslender.block.TaintedDoorBlock;
@@ -29,6 +31,7 @@ import net.mcreator.trslender.block.TaintedButtonBlock;
 import net.mcreator.trslender.block.StrippedTaintedWoodBlock;
 import net.mcreator.trslender.block.StrippedTaintedLogBlock;
 import net.mcreator.trslender.block.PageBlock;
+import net.mcreator.trslender.block.FlashlightLightBlock;
 import net.mcreator.trslender.TrSlenderMod;
 
 public class TrSlenderModBlocks {
@@ -48,17 +51,27 @@ public class TrSlenderModBlocks {
 	public static final RegistryObject<Block> TAINTED_PRESSURE_PLATE = REGISTRY.register("tainted_pressure_plate", () -> new TaintedPressurePlateBlock());
 	public static final RegistryObject<Block> TAINTED_BUTTON = REGISTRY.register("tainted_button", () -> new TaintedButtonBlock());
 	public static final RegistryObject<Block> TAINTED_LEAVES = REGISTRY.register("tainted_leaves", () -> new TaintedLeavesBlock());
+	public static final RegistryObject<Block> FLASHLIGHT_LIGHT = REGISTRY.register("flashlight_light", () -> new FlashlightLightBlock());
+	public static final RegistryObject<Block> TAINTED_GRASS_BLOCK = REGISTRY.register("tainted_grass_block", () -> new TaintedGrassBlockBlock());
 
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 	public static class ClientSideHandler {
 		@SubscribeEvent
-		public static void blockColorLoad(RegisterColorHandlersEvent.Block event) {
-			TaintedLeavesBlock.blockColorLoad(event);
+		public static void clientSetup(FMLClientSetupEvent event) {
+			PageBlock.registerRenderLayer();
+			FlashlightLightBlock.registerRenderLayer();
 		}
 
 		@SubscribeEvent
-		public static void itemColorLoad(RegisterColorHandlersEvent.Item event) {
+		public static void blockColorLoad(ColorHandlerEvent.Block event) {
+			TaintedLeavesBlock.blockColorLoad(event);
+			TaintedGrassBlockBlock.blockColorLoad(event);
+		}
+
+		@SubscribeEvent
+		public static void itemColorLoad(ColorHandlerEvent.Item event) {
 			TaintedLeavesBlock.itemColorLoad(event);
+			TaintedGrassBlockBlock.itemColorLoad(event);
 		}
 	}
 }

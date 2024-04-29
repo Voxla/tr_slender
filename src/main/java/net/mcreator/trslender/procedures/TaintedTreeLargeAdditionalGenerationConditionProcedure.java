@@ -19,13 +19,12 @@ public class TaintedTreeLargeAdditionalGenerationConditionProcedure {
 			for (int index1 = 0; index1 < 12; index1++) {
 				sz = -6;
 				for (int index2 = 0; index2 < 12; index2++) {
-					if ((world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WATER || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WATER
-							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.BUBBLE_COLUMN || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.LAVA
-							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.LAVA || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB
-							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.BRICKS || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.WAXED_OXIDIZED_CUT_COPPER
-							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.POLISHED_ANDESITE
-							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == TrSlenderModBlocks.TAINTED_PLANKS.get()
-							|| (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == Blocks.SMOOTH_STONE || (world.getBlockState(BlockPos.containing(x + sx, y + sy, z + sz))).getBlock() == TrSlenderModBlocks.PAGE.get()) {
+					if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.WATER || (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.WATER
+							|| (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.BUBBLE_COLUMN || (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.LAVA
+							|| (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.LAVA || (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.WAXED_WEATHERED_CUT_COPPER_SLAB
+							|| (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.BRICKS || (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.WAXED_OXIDIZED_CUT_COPPER
+							|| (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.POLISHED_ANDESITE || (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == TrSlenderModBlocks.TAINTED_PLANKS.get()
+							|| (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == Blocks.SMOOTH_STONE || (world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == TrSlenderModBlocks.PAGE.get()) {
 						found = true;
 					}
 					sz = sz + 1;
@@ -34,7 +33,7 @@ public class TaintedTreeLargeAdditionalGenerationConditionProcedure {
 			}
 			sx = sx + 1;
 		}
-		if (world.isEmptyBlock(BlockPos.containing(x, y - 1, z))) {
+		if (world.isEmptyBlock(new BlockPos(x, y - 1, z))) {
 			return false;
 		}
 		if (found == true) {

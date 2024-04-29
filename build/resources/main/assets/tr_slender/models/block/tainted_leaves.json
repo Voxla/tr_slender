@@ -1,7 +1,7 @@
 {
   "parent": "block/leaves",
   "textures": {
-    "all": "tr_slender:block/tainted_leaves",
-    "particle": "tr_slender:block/tainted_leaves"
+    "all": "tr_slender:blocks/tainted_leaves",
+    "particle": "tr_slender:blocks/tainted_leaves"
   }
 }

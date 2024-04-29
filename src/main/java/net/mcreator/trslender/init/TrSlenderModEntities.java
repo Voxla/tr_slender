@@ -18,15 +18,20 @@ import net.minecraft.world.entity.Entity;
 
 import net.mcreator.trslender.entity.SlendermanEntity;
 import net.mcreator.trslender.entity.ProxyEntity;
+import net.mcreator.trslender.entity.HoodieEntity;
 import net.mcreator.trslender.TrSlenderMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class TrSlenderModEntities {
-	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, TrSlenderMod.MODID);
+	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITIES, TrSlenderMod.MODID);
 	public static final RegistryObject<EntityType<SlendermanEntity>> SLENDERMAN = register("slenderman", EntityType.Builder.<SlendermanEntity>of(SlendermanEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(200)
 			.setUpdateInterval(3).setCustomClientFactory(SlendermanEntity::new).fireImmune().sized(0.6f, 2.8f));
 	public static final RegistryObject<EntityType<ProxyEntity>> PROXY = register("proxy",
 			EntityType.Builder.<ProxyEntity>of(ProxyEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ProxyEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<HoodieEntity>> HOODIE = register("hoodie",
+			EntityType.Builder.<HoodieEntity>of(HoodieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(HoodieEntity::new)
 
 					.sized(0.6f, 1.8f));
 
@@ -39,6 +44,7 @@ public class TrSlenderModEntities {
 		event.enqueueWork(() -> {
 			SlendermanEntity.init();
 			ProxyEntity.init();
+			HoodieEntity.init();
 		});
 	}
 
@@ -46,5 +52,6 @@ public class TrSlenderModEntities {
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
 		event.put(SLENDERMAN.get(), SlendermanEntity.createAttributes().build());
 		event.put(PROXY.get(), ProxyEntity.createAttributes().build());
+		event.put(HOODIE.get(), HoodieEntity.createAttributes().build());
 	}
 }

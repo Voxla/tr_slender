@@ -1,22 +1,23 @@
 
 package net.mcreator.trslender.block;
 
-import net.minecraft.world.level.storage.loot.LootParams;
-import net.minecraft.world.level.material.MapColor;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraftforge.common.util.ForgeSoundType;
+
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.material.MaterialColor;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.AxeItem;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
@@ -27,7 +28,11 @@ public class TaintedWoodBlock extends Block {
 	public static final EnumProperty<Direction.Axis> AXIS = BlockStateProperties.AXIS;
 
 	public TaintedWoodBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava().instrument(NoteBlockInstrument.BASS).mapColor(MapColor.WOOD).sound(SoundType.CHERRY_WOOD).strength(55f, 1200f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.WOOD, MaterialColor.WOOD)
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("tr_slender:tainted_wood_break")), () -> new SoundEvent(new ResourceLocation("tr_slender:tainted_wood_step")),
+						() -> new SoundEvent(new ResourceLocation("tr_slender:tainted_wood_break")), () -> new SoundEvent(new ResourceLocation("tr_slender:tainted_wood_break")),
+						() -> new SoundEvent(new ResourceLocation("tr_slender:tainted_wood_break"))))
+				.strength(55f, 1200f));
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 
@@ -59,14 +64,7 @@ public class TaintedWoodBlock extends Block {
 	}
 
 	@Override
-	public boolean canHarvestBlock(BlockState state, BlockGetter world, BlockPos pos, Player player) {
-		if (player.getInventory().getSelected().getItem() instanceof AxeItem tieredItem)
-			return tieredItem.getTier().getLevel() >= 3;
-		return false;
-	}
-
-	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;

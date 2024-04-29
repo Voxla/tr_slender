@@ -1,13 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "tr_slender:block/tainted_wood",
-    "up": "tr_slender:block/tainted_wood",
-    "north": "tr_slender:block/tainted_wood",
-    "east": "tr_slender:block/tainted_wood",
-    "south": "tr_slender:block/tainted_wood",
-    "west": "tr_slender:block/tainted_wood",
-    "particle": "tr_slender:block/tainted_wood"
-  },
-  "render_type": "solid"
+    "down": "tr_slender:blocks/tainted_wood",
+    "up": "tr_slender:blocks/tainted_wood",
+    "north": "tr_slender:blocks/tainted_wood",
+    "east": "tr_slender:blocks/tainted_wood",
+    "south": "tr_slender:blocks/tainted_wood",
+    "west": "tr_slender:blocks/tainted_wood",
+    "particle": "tr_slender:blocks/tainted_wood"
+  }
 }

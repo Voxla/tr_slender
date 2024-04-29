@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "bottom": "tr_slender:blocks/tainted_dirt",
+    "top": "tr_slender:blocks/tainted_grass_block_top",
+    "side": "tr_slender:blocks/tainted_grass_block_side",
+    "overlay": "tr_slender:blocks/tainted_grass_block_side_overlay",
+    "particle": "tr_slender:blocks/tainted_dirt"
+  }
+}

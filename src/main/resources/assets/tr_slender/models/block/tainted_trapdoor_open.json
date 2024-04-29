@@ -1,8 +1,7 @@
 {
   "parent": "block/template_orientable_trapdoor_open",
   "textures": {
-    "texture": "tr_slender:block/tainted_trapdoor",
-    "particle": "tr_slender:block/tainted_trapdoor"
-  },
-  "render_type": "solid"
+    "texture": "tr_slender:blocks/tainted_trapdoor",
+    "particle": "tr_slender:blocks/tainted_trapdoor"
+  }
 }

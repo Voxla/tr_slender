@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry output="bin/main" kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="gradle_scope" value="main"/>
@@ -31,18 +30,19 @@
 			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="C:\Users\legol\MCreatorWorkspaces\tr_slender\build\natives"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="output" path="bin/default"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_official_1.20.1/forge-1.20.1-47.1.0_mapped_official_1.20.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.1.0_mapped_official_1.20.1/forge-1.20.1-47.1.0_mapped_official_1.20.1-recomp.jar">
+	<classpathentry sourcepath="C:/Users/legol/MCreatorWorkspaces/tr_slender/build/fg_cache/net/minecraftforge/forge/1.18.2-40.2.10_mapped_official_1.18.2/forge-1.18.2-40.2.10_mapped_official_1.18.2-sources.jar" kind="lib" path="C:/Users/legol/MCreatorWorkspaces/tr_slender/build/fg_cache/net/minecraftforge/forge/1.18.2-40.2.10_mapped_official_1.18.2/forge-1.18.2-40.2.10_mapped_official_1.18.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/forge_gradle/minecraft_repo/versions/1.20.1/client-extra.jar">
+	<classpathentry kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/forge_gradle/minecraft_repo/versions/1.18.2/client-extra.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlloader/1.20.1-47.1.0/feb00a92723915fc1c448b6c31fb1b51c70d5686/fmlloader-1.20.1-47.1.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlloader/1.20.1-47.1.0/f7b5e4ef130d184e0ea48e6d8bf0a2d90757e8c6/fmlloader-1.20.1-47.1.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlloader/1.18.2-40.2.10/3fa1ceb7bb4ddfd1135d455c88a31de7567e4f60/fmlloader-1.18.2-40.2.10-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlloader/1.18.2-40.2.10/bf8adf960205f8d3fde11b0af72e58841525d87e/fmlloader-1.18.2-40.2.10.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -57,7 +57,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/c388a68bc2b17a314dfa7c769d858ada0fc32dcf/guava-31.1-jre-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.1-jre/60458f877d055d0c9114d9e1a2efb737b4bc282c/guava-31.1-jre.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.0.1-jre/d34772c01bd6637982d1aafe895c4fcd8b42e139/guava-31.0.1-jre-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/guava/31.0.1-jre/119ea2b2bc205b138974d351777b20f02b92704b/guava-31.0.1-jre.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -67,32 +67,27 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.1/d2bf7869433d8d152fade87ac898f84b1b876837/java-objc-bridge-1.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.1/1227f9e0666314f9de41477e3ec277e542ed7f7b/java-objc-bridge-1.1.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.0.0/865837a198189aee737019561ece842827f24278/java-objc-bridge-1.0.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/ca.weblite/java-objc-bridge/1.0.0/6ef160c3133a78de015830860197602ca1c855d3/java-objc-bridge-1.0.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/forgespi/7.0.1/c8298f054a2aa1de8cf83c0406c806143c289bb9/forgespi-7.0.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/forgespi/7.0.1/3b4972a0cdb135853dba219be61a79b22cff1309/forgespi-7.0.1.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mergetool/1.1.3/608ca0649946a7d3bcda321d43f29db2b40f0004/mergetool-1.1.3-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mergetool/1.1.3/d7d4b6eac7f49c59255c8ac25190802c29ac9a4a/mergetool-1.1.3-api.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mergetool/1.1.5/43e6a124292079d99f7f20fb57b8c8b17dc28c8e/mergetool-1.1.5-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mergetool/1.1.5/f3da18e12c696d35a47c82cbb2cc8b5aa15e1154/mergetool-1.1.5-api.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/ca5088d615accaabd2aa956b10b236a4e75cfccb/annotations-23.0.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/23.0.0/8cc20c07506ec18e0834947b84a864bfc094484e/annotations-23.0.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.0.1/2f9be7fbab3157633befe74c684bd3badb28a876/annotations-24.0.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.0.1/13c5c75c4206580aa4d683bffee658caae6c9f43/annotations-24.0.1.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/securejarhandler/1.0.8/f4966459e036b0d17958d01e77222e5fbe19ff9f/securejarhandler-1.0.8-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/securejarhandler/1.0.8/94c7b14c960e1b6cb37337d81ad4ec5932f7595c/securejarhandler-1.0.8.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/securejarhandler/2.1.10/96331802dca7d09fd109500a708200ae758ff412/securejarhandler-2.1.10-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/securejarhandler/2.1.10/51e6a22c6c716beb11e244bf5b8be480f51dd6b5/securejarhandler-2.1.10.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/10.0.9/3a731130cea80690b50d02303e3a0bd5c2a808fc/modlauncher-10.0.9-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/10.0.9/6d9443f56f50bb85cea383686ff9c867391458b/modlauncher-10.0.9.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/9.1.3/92e9de2b2bad41204c9fd0c9f1352620add80534/modlauncher-9.1.3-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/modlauncher/9.1.3/7339d0e87813c366d706c3fdba479455e2283ecd/modlauncher-9.1.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -142,17 +137,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.1.0/fa3a353b05f516c12555b25a97f8dcc40067cece/fmlcore-1.20.1-47.1.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.20.1-47.1.0/69ca36ae5b8d45c377a5485dc38a7343e5ebf33c/fmlcore-1.20.1-47.1.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.18.2-40.2.10/a8d84457516e16479173800bbaff2297d9358be5/fmlcore-1.18.2-40.2.10-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlcore/1.18.2-40.2.10/2740cecca3412910901af50695e3b5bcc719549/fmlcore-1.18.2-40.2.10.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/6.0.5/9e63113e81f9d25c5082ba61df851935d510957/eventbus-6.0.5-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/6.0.5/699143dd438431d06b57416944f7cedbe52e1475/eventbus-6.0.5.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/5.0.7/893e672b5a7e768aeaf0fd4a6104021a4c5a7232/eventbus-5.0.7-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/eventbus/5.0.7/5589e7511c4993054e6a80890618b46ed53519a0/eventbus-5.0.7.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/coremods/5.0.1/a668cc3a77a31a42d9763d37fb348acbaa968f13/coremods-5.0.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/coremods/5.0.1/386b00279628b105b2d507539c46e134e96f6237/coremods-5.0.1.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/forgespi/4.0.15-4.x/9ed810ee2b75b78158079e4243bd3f9f22780d12/forgespi-4.0.15-4.x-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/forgespi/4.0.15-4.x/1d10ffe779684cb20f2b63bdcc030152e47116bb/forgespi-4.0.15-4.x.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/coremods/5.0.3/8b51ae548629422ecf99668157daa50edd4eca5f/coremods-5.0.3-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/coremods/5.0.3/25795913e9de905b22ccca803fe61e475e999ddf/coremods-5.0.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -172,12 +172,12 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.5/63964307a951bff155bcd09bfa647afadbd95dca/maven-artifact-3.8.5-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.5/4433f50c07debefaed0553bd0068f4f48d449313/maven-artifact-3.8.5.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.1/b7fff7d889a48732495f2e6fb8c460e87cbc2bf8/maven-artifact-3.8.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.1/114a2dd16c4c568bf0ca57719b83f2685dcc5734/maven-artifact-3.8.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.6.3/de30205cf0153746a489a53203c41fa3766d7d24/typetools-0.6.3-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.6.3/a01aaa6ddaea9ec07ec4f209487b7a46a526283a/typetools-0.6.3.jar">
+	<classpathentry kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.jodah/typetools/0.8.3/98f84f353457629e81cc6827224871b1a8faa7af/typetools-0.8.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -202,7 +202,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/bootstraplauncher/1.1.2/3a8305ce392f55b6caae82468b75bcad2b14b6bd/bootstraplauncher-1.1.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/bootstraplauncher/1.1.2/c546e00443d8432cda6baa1c860346980742628/bootstraplauncher-1.1.2.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/bootstraplauncher/1.0.0/84ac1a4e7786a5a67474c104d3397cb0435ac050/bootstraplauncher-1.0.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/cpw.mods/bootstraplauncher/1.0.0/f55ddbb35612c6745cefc47d1a0d6dbfb25d3982/bootstraplauncher-1.0.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -212,47 +212,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlearlydisplay/1.20.1-47.1.0/74bb8d28053064a13bf6c5606949a868fa41b01d/fmlearlydisplay-1.20.1-47.1.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/fmlearlydisplay/1.20.1-47.1.0/faf61a8a8cc80e82a5691fac00149f06eeaf0438/fmlearlydisplay-1.20.1-47.1.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.18.2-40.2.10/2afa492b65c281db0f7b9dfb8697b484ecf46648/javafmllanguage-1.18.2-40.2.10-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.18.2-40.2.10/8d0a7f3d415287356917a4440fec657f2642711d/javafmllanguage-1.18.2-40.2.10.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.1.0/b210940fe4974ca4813c092720062c7992e4e5d/javafmllanguage-1.20.1-47.1.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/javafmllanguage/1.20.1-47.1.0/a2cd58d15791eaac9983e30be0995e66bd48633e/javafmllanguage-1.20.1-47.1.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.18.2-40.2.10/9a15b3af6202d0ccc0baea86f410638fa0f476c/lowcodelanguage-1.18.2-40.2.10-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.18.2-40.2.10/db214162f7ec443023f743bd235eb24b871cb5db/lowcodelanguage-1.18.2-40.2.10.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.1.0/a6646c9d18d99c3458e955657938b561de323a/lowcodelanguage-1.20.1-47.1.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/lowcodelanguage/1.20.1-47.1.0/f1f11b7217b8320f1b3eb81c746b7b8a70a9ba06/lowcodelanguage-1.20.1-47.1.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.18.2-40.2.10/519f5b12a7519a6ed20e3f560ef962003b7edcd8/mclanguage-1.18.2-40.2.10-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.18.2-40.2.10/ffbd80ded955115e3fda16e691acc132f4e88ef6/mclanguage-1.18.2-40.2.10.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.1.0/2a5a53d45a5b60e1914ba9bd6477270bd809a14d/mclanguage-1.20.1-47.1.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/mclanguage/1.20.1-47.1.0/ff1b8eeb1bd00dfb130263b8952b931f5369252e/mclanguage-1.20.1-47.1.0.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.2.2/d78c032d2eb0aa476fbd8acf3ba1d6bb3845d03b/oshi-core-6.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/6.2.2/54f5efc19bca95d709d9a37d19ffcbba3d21c1a6/oshi-core-6.2.2.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10/6ed5748c6f0860e81e09d4d2582fe914cfa41d1e/gson-2.10-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.10/dd9b193aef96e973d5a11ab13cd17430c2e4306b/gson-2.10.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1d064e61aad6c51cc77f9b59dc2cccc78e792f5a/failureaccess-1.0.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/71.1/cc9684d401adeb1a90404a5d77fd38d348a41ec1/icu4j-71.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/71.1/9e7d3304c23f9ba5cb71915f7cce23231a57a445/icu4j-71.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/authlib/4.0.43/d82e437f9964a53d2cda4b120f4cc7698697323b/authlib-4.0.43-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/authlib/4.0.43/2ff9d747a77570a07a60d32ac77eb6162ad2a2d9/authlib-4.0.43.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/logging/1.0.0/600952f78e73b97b05b3a6e1a9c6ef049cfe0112/logging-1.0.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/logging/1.0.0/f6ca3b2eee0b80b384e8ed93d368faecb82dfb9b/logging-1.0.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -262,27 +237,72 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.1.8/d876490896dc5d91c01d8fbc8f14f9f1756a9f67/brigadier-1.1.8-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.1.8/5244ce82c3337bba4a196a3ce858bfaecc74404a/brigadier-1.1.8.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/6.0.8/fd70844ad56424d4d5004c415b47d97313dd723d/datafixerupper-6.0.8-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/6.0.8/3ba4a30557a9b057760af4011f909ba619fc5125/datafixerupper-6.0.8.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/logging/1.1.1/9e1dd652bab1d082df57ceb5a7ad96cdaea61808/logging-1.1.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/logging/1.1.1/832b8e6674a9b325a5175a3a6267dfaf34c85139/logging-1.1.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/patchy/2.2.10/da05971b07cbb379d002cf7eaec6a2048211fefc/patchy-2.2.10.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.17.9/1898fbfd00a552b7f9a3cc0438623845a91e74ed/text2speech-1.17.9-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.17.9/3cad216e3a7f0c19b4b394388bc9ffc446f13b14/text2speech-1.17.9.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/5.8.5/2b307812731b13ff8b133a96322b0a8cf9b2879a/oshi-core-5.8.5-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.github.oshi/oshi-core/5.8.5/1d0ec654d820741327f5a9229d513732a4b7ce50/oshi-core-5.8.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.10.0/1ffcbea712326d2ada01104eb577d90a8ebf6097/jna-platform-5.10.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.10.0/fbed7d9669dba47714ad0d4f4454290a997aee69/jna-platform-5.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.10.0/ff0287cd964354b358d49ad41e5bae9c7d1b4ae/jna-5.10.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.10.0/7cf4c87dd802db50721db66947aa237d7ad09418/jna-5.10.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j18-impl/2.17.0/8440a408e5fae9e742a2f2d8126f05fde058e9f2/log4j-slf4j18-impl-2.17.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j18-impl/2.17.0/bd7f6c0b9224dd214afb4e684957e2349b529a8d/log4j-slf4j18-impl-2.17.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.machinezoo.noexception/noexception/1.7.1/3c242b5f554474cab03425de7f9d8eb433ead19b/noexception-1.7.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.machinezoo.noexception/noexception/1.7.1/b65330c98e38a1f915fa54a6e5eca496505e3f0a/noexception-1.7.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.8.0-beta4/b36a694fefcf7c2a274765143dc63e86389b33d1/slf4j-api-1.8.0-beta4-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.8.0-beta4/83b0359d847ee053d745be7ec0d8e9e8a44304b4/slf4j-api-1.8.0-beta4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/70.1/21551c094193ab59d284b434c1e33a3ddf4b5c0e/icu4j-70.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.ibm.icu/icu4j/70.1/dfa3a1fbc55bf5db8c6e79fc0935ac7ab1202950/icu4j-70.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/javabridge/1.2.24/a9ca59eebc32c5c771075df31a0b6e31d2ed8565/javabridge-1.2.24-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/javabridge/1.2.24/c876796229b2ef5120f186eab5acc870699d3b9/javabridge-1.2.24.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/950831646d014c9162999019a3cb17d5fc01ac0d/jopt-simple-5.0.4-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.68.Final/7c1ff8896c8a6718848c5ba36a919672ac13d10f/netty-all-4.1.68.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-all/4.1.68.Final/b8266a3c93c1c051109f71d3449e5dcd5d60b333/netty-all-4.1.68.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1d064e61aad6c51cc77f9b59dc2cccc78e792f5a/failureaccess-1.0.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.1/1dcf1de382a0bf95a3d8b0849546c88bac1292c9/failureaccess-1.0.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/198b882fdc2c72c89c63401d946f6ba46c3acea3/commons-lang3-3.12.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/2ef0187124bbfc7aed3038d4ffdd2241e8992937/commons-io-2.11.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -297,72 +317,22 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/2ef0187124bbfc7aed3038d4ffdd2241e8992937/commons-io-2.11.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.11.0/a2503f302b11ebde7ebc3df41daebe0e4eea3689/commons-io-2.11.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.0.18/f93ce897789cb28518ebb7a8a6bc3946922bc8b6/brigadier-1.0.18-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.0.18/c1ef1234282716483c92183f49bef47b1a89bfa9/brigadier-1.0.18.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.1.27/cf91f64dcfa2eaefc3db2663192a3e146a91587a/datafixerupper-4.1.27-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/datafixerupper/4.1.27/a02c43824ce57c3f7a7d7e744f0d99a040398b5/datafixerupper-4.1.27.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.82.Final/eb21430492b4087f179f378def9c101af2ceb3a3/netty-handler-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-handler/4.1.82.Final/644041d1fa96a5d3130a29e8978630d716d76e38/netty-handler-4.1.82.Final.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/e1167849f172a0b75d6ffe4e4b2f34b9259795bb/gson-2.8.9-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.9/8a432c1d6825781e21a02db2e2c33c5fde2833b9/gson-2.8.9.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.82.Final/cca3483023dc4ea2fecd674a43e6648104b93bef/netty-codec-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.1.82.Final/b77200379acb345a9ffdece1c605e591ac3e4e0a/netty-codec-4.1.82.Final.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.82.Final/7d479710b4240ddd900a9bc8fe31c8f752df25f8/netty-transport-classes-epoll-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-transport-classes-epoll/4.1.82.Final/e7c7dd18deac93105797f30057c912651ea76521/netty-transport-classes-epoll-4.1.82.Final.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.82.Final/93bda191a15bd338a03de553d63d539aa8e9ad46/netty-transport-native-unix-common-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.1.82.Final/3e895b35ca1b8a0eca56cacff4c2dde5d2c6abce/netty-transport-native-unix-common-4.1.82.Final.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.82.Final/a7d580e125df85b115e42a00ee7adfb2b81b3367/netty-transport-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.1.82.Final/e431a218d91acb6476ccad5f5aafde50aa3945ca/netty-transport-4.1.82.Final.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.82.Final/6eca8b1b4342f92f178eabf50fbdb9a6732fb350/netty-buffer-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.1.82.Final/a544270cf1ae8b8077082f5036436a9a9971ea71/netty-buffer-4.1.82.Final.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.82.Final/7855042d98fd07633901c09987d814f0e49f1b21/netty-resolver-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.1.82.Final/38f665ae8dcd29032eea31245ba7806bed2e0fa8/netty-resolver-4.1.82.Final.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.82.Final/66841700234dd5771962ec51d940813d421329bf/netty-common-4.1.82.Final-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.1.82.Final/22d148e85c3f5ebdacc0ce1f5aabb1d420f73f3/netty-common-4.1.82.Final.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.9/98ad0726f121ae5e8109f21c6bc0d7791100916d/fastutil-8.5.9-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.9/bb7ea75ecdb216654237830b3a96d87ad91f8cc5/fastutil-8.5.9.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.12.1/13250aea879918ee2cf861703733a1b1f834d13e/jna-platform-5.12.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna-platform/5.12.1/97406a297c852f4a41e688a176ec675f72e8329/jna-platform-5.12.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.12.1/a558f0c18863579764c8adcdf2312e0b9711c5af/jna-5.12.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.java.dev.jna/jna/5.12.1/b1e93a735caea94f503e95e6fe79bf9cdc1e985d/jna-5.12.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/950831646d014c9162999019a3cb17d5fc01ac0d/jopt-simple-5.0.4-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/5.0.4/4fdac2fbe92dfad86aa6e9301736f6b4342a3f5c/jopt-simple-5.0.4.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/authlib/3.3.39/95644a2af6fbf79b6fe7018630ab58d29ede08e2/authlib-3.3.39-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/authlib/3.3.39/289405e70c0917eaeac017f7fba9adb4427baa36/authlib-3.3.39.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -372,187 +342,72 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/198b882fdc2c72c89c63401d946f6ba46c3acea3/commons-lang3-3.12.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.12.0/c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e/commons-lang3-3.12.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.15/2ab1724e80d075698903a49f5e8fa90b077937ac/httpcore-4.4.15-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.15/7f2e0c573eaa7a74bac2e89b359e1f73d92a0a1d/httpcore-4.4.15.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.14/9d3e55f73fedca10282469031cf6bc3a69e36711/httpcore-4.4.14-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpcore/4.4.14/9dd1a631c082d92ecd4bd8fd4cf55026c720a8c1/httpcore-4.4.14.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.19.0/b01fda4bda99fce653352ebe79897e43dee2e67f/log4j-core-2.19.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.19.0/3b6eeb4de4c49c0fe38a4ee27188ff5fee44d0bb/log4j-core-2.19.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.6/cae16d296ddc343bfb4e20ef67fbcef07fca40e/fastutil-8.5.6-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.6/76f95700418a68fbc4ac050525261f05dc681ca1/fastutil-8.5.6.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.19.0/628978b55e7195966a111841796d17ae048bce62/log4j-slf4j2-impl-2.19.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-slf4j2-impl/2.19.0/5c04bfdd63ce9dceb2e284b81e96b6a70010ee10/log4j-slf4j2-impl-2.19.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.0/293933e165c0f05a9c2b5a65c19d7462bf630b5/log4j-core-2.17.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.0/fe6e7a32c1228884b9691a744f953a55d0dd8ead/log4j-core-2.17.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.0/9082ee1815f0c0052e8b981159ec836cc45487cd/log4j-api-2.17.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.0/bbd791e9c8c9421e45337c4fe0a10851c086e36c/log4j-api-2.17.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.2.2/d20a6df6fcb6308fea22c835d23e0297454d759d/lwjgl-jemalloc-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.2.2/ee8e57a79300f78294576d87c4a587f8c99402e2/lwjgl-jemalloc-3.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.19.0/e50c05b05437e7f5fc11609b8366a5e151f74461/log4j-api-2.19.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.19.0/ea1b37f38c327596b216542bc636cfdc0b8036fa/log4j-api-2.19.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.2/1f60241adab8073234fbe7d38cf9dbc4c28c50b6/lwjgl-openal-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.2/2b772a102b0a11ee5f2109a5b136f4dc7c630827/lwjgl-openal-3.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/c1f2266a7d0386d7643879ed1b93f51d29126180/joml-1.10.5-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.2/4f5dffe36ce3f4a35d9d0ea1b7b31cd49e36d58b/lwjgl-opengl-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.2/6ac5bb88b44c43ea195a570aab059f63da004cd8/lwjgl-opengl-3.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/e502700e6a1a0d02bddb8b4ef85afcdc15c88358/lwjgl-glfw-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/cbac1b8d30cb4795149c1ef540f912671a8616d0/lwjgl-glfw-3.3.1.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.2/3e402df983933dec9d9123e494fa3130b3900ab8/lwjgl-glfw-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.2/d3ad4df38e400b8afba1de63f84338809399df5b/lwjgl-glfw-3.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/e502700e6a1a0d02bddb8b4ef85afcdc15c88358/lwjgl-glfw-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/ed892f945cf7e79c8756796f32d00fa4ceaf573b/lwjgl-glfw-3.3.1-natives-windows.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.2/2eb5cd96aabf2f1abf165dff12ab882878f7dc1d/lwjgl-stb-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.2/3b8e6ebc5851dd3d17e37e5cadce2eff2a429f0f/lwjgl-stb-3.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/e502700e6a1a0d02bddb8b4ef85afcdc15c88358/lwjgl-glfw-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/beda65ee503443e60aa196d58ed31f8d001dc22a/lwjgl-glfw-3.3.1-natives-windows-arm64.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.2.2/2fe76dcf2ca02ae0e64ac7c69eb251c09df0e922/lwjgl-tinyfd-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.2.2/fcbe606c8f8da6f8f9a05e2c540eb1ee8632b0e9/lwjgl-tinyfd-3.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/e502700e6a1a0d02bddb8b4ef85afcdc15c88358/lwjgl-glfw-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.1/b997e3391d6ce8f05487e7335d95c606043884a1/lwjgl-glfw-3.3.1-natives-windows-x86.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.2/b32bcb411ea7a91aab25b1d0309887aae16778df/lwjgl-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.2/8ad6294407e15780b43e84929c40e4c5e997972e/lwjgl-3.2.2.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/f5858d34e06053b1866858fed7a685cf0c6b5926/lwjgl-jemalloc-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/a817bcf213db49f710603677457567c37d53e103/lwjgl-jemalloc-3.3.1.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.12.4/2c08f3a985dfc7f86dcd705a360e5e1a13eac068/text2speech-1.12.4-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.12.4/1f618f522dbdd93218c270bcfd8f8dd84be31717/text2speech-1.12.4.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/f5858d34e06053b1866858fed7a685cf0c6b5926/lwjgl-jemalloc-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/948a89b76a16aa324b046ae9308891216ffce5f9/lwjgl-jemalloc-3.3.1-natives-windows.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/f5858d34e06053b1866858fed7a685cf0c6b5926/lwjgl-jemalloc-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/cae85c4edb219c88b6a0c26a87955ad98dc9519d/lwjgl-jemalloc-3.3.1-natives-windows-arm64.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/f5858d34e06053b1866858fed7a685cf0c6b5926/lwjgl-jemalloc-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.3.1/fb476c8ec110e1c137ad3ce8a7f7bfe6b11c6324/lwjgl-jemalloc-3.3.1-natives-windows-x86.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/9c563bf7c10b71c6609b9f96a7c7859bdf05d21f/lwjgl-openal-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/2623a6b8ae1dfcd880738656a9f0243d2e6840bd/lwjgl-openal-3.3.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/9c563bf7c10b71c6609b9f96a7c7859bdf05d21f/lwjgl-openal-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/30a474d0e57193d7bc128849a3ab66bc9316fdb1/lwjgl-openal-3.3.1-natives-windows.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/9c563bf7c10b71c6609b9f96a7c7859bdf05d21f/lwjgl-openal-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/40d65f1a7368a2aa47336f9cb69f5a190cf9975a/lwjgl-openal-3.3.1-natives-windows-arm64.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/9c563bf7c10b71c6609b9f96a7c7859bdf05d21f/lwjgl-openal-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.1/888349f7b1be6fbae58bf8edfb9ef12def04c4e3/lwjgl-openal-3.3.1-natives-windows-x86.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/1a827bc02651fa44d32f424c380edc6d53f94a62/lwjgl-opengl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/831a5533a21a5f4f81bbc51bb13e9899319b5411/lwjgl-opengl-3.3.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/1a827bc02651fa44d32f424c380edc6d53f94a62/lwjgl-opengl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/c1807e9bd571402787d7e37e3029776ae2513bb8/lwjgl-opengl-3.3.1-natives-windows.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/1a827bc02651fa44d32f424c380edc6d53f94a62/lwjgl-opengl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/527d78f1e9056aff3ed02ce93019c73c5e8f1721/lwjgl-opengl-3.3.1-natives-windows-arm64.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/1a827bc02651fa44d32f424c380edc6d53f94a62/lwjgl-opengl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.1/deef3eb9b178ff2ff3ce893cc72ae741c3a17974/lwjgl-opengl-3.3.1-natives-windows-x86.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/22cb295464f44068add8443204ec8c85fd379cbe/lwjgl-stb-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/b119297cf8ed01f247abe8685857f8e7fcf5980f/lwjgl-stb-3.3.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/22cb295464f44068add8443204ec8c85fd379cbe/lwjgl-stb-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/86315914ac119efdb02dc9e8e978ade84f1702af/lwjgl-stb-3.3.1-natives-windows.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/22cb295464f44068add8443204ec8c85fd379cbe/lwjgl-stb-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/fde63cdd2605c00636721a6c8b961e41d1f6b247/lwjgl-stb-3.3.1-natives-windows-arm64.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/22cb295464f44068add8443204ec8c85fd379cbe/lwjgl-stb-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.1/a8d41f419eecb430b7c91ea2ce2c5c451cae2091/lwjgl-stb-3.3.1-natives-windows-x86.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/4784c20508b51386ce9d572632524a5bf47ccb40/lwjgl-tinyfd-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/ff1914111ef2e3e0110ef2dabc8d8cdaad82347/lwjgl-tinyfd-3.3.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/4784c20508b51386ce9d572632524a5bf47ccb40/lwjgl-tinyfd-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/a5d830475ec0958d9fdba1559efa99aef211e6ff/lwjgl-tinyfd-3.3.1-natives-windows.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/4784c20508b51386ce9d572632524a5bf47ccb40/lwjgl-tinyfd-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/83a5e780df610829ff3a737822b4f931cffecd91/lwjgl-tinyfd-3.3.1-natives-windows-arm64.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/4784c20508b51386ce9d572632524a5bf47ccb40/lwjgl-tinyfd-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.3.1/842eedd876fae354abc308c98a263f6bbc9e8a4d/lwjgl-tinyfd-3.3.1-natives-windows-x86.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/e918fb595d1ca293a68807a9da8b519ea348a67a/lwjgl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/ae58664f88e18a9bb2c77b063833ca7aaec484cb/lwjgl-3.3.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/e918fb595d1ca293a68807a9da8b519ea348a67a/lwjgl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/36c37f16ab611b3aa11f3bcf80b1d509b4ce6b/lwjgl-3.3.1-natives-windows.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/e918fb595d1ca293a68807a9da8b519ea348a67a/lwjgl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/f46cadcf95675908fd3a550d63d9d709cb68998/lwjgl-3.3.1-natives-windows-arm64.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/e918fb595d1ca293a68807a9da8b519ea348a67a/lwjgl-3.3.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.1/3b14f4beae9dd39791ec9e12190a9380cd8a3ce6/lwjgl-3.3.1-natives-windows-x86.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.machinezoo.noexception/noexception/1.7.1/3c242b5f554474cab03425de7f9d8eb433ead19b/noexception-1.7.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.machinezoo.noexception/noexception/1.7.1/b65330c98e38a1f915fa54a6e5eca496505e3f0a/noexception-1.7.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.1/99dd49517b321de42b34501d877d3ab69b4de6b5/slf4j-api-2.0.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.1/f48d81adce2abf5ad3cfe463df517952749e03bc/slf4j-api-2.0.1.jar">
-		<attributes>
-			<attribute name="gradle_used_by_scope" value="main,test"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/ebfaf7070f7a3f5314ff28180d81088aa8cd2f41/plexus-utils-3.3.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/cf43b5391de623b36fe066a21127baef82c64022/plexus-utils-3.3.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.1/6190c9c85289f11f3455d84eefdc3c54544e8cce/plexus-utils-3.2.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.2.1/13b015768e0d04849d2794e4c47eb02d01a0de32/plexus-utils-3.2.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -567,7 +422,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.11.0/d060e42b6aa896a3abe2ec612e1cf8cc307f8a49/error_prone_annotations-2.11.0-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.11.0/c5a0ace696d3f8b1c1d8cc036d8c03cc0cbe6b69/error_prone_annotations-2.11.0.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.7.1/2ca80bf7ac820fce6c743561b550c8bfb6c87c57/error_prone_annotations-2.7.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.7.1/458d9042f7aa6fa9a634df902b37f544e15aacac/error_prone_annotations-2.7.1.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -597,7 +452,7 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.20.1/mapping-1.20.1-mapping.zip">
+	<classpathentry kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/forge_gradle/mcp_repo/net/minecraft/mapping/1.18.2/mapping-1.18.2-mapping.zip">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
@@ -607,7 +462,57 @@
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/srgutils/0.4.11/56a06fb4edd6adf1b4b951732b3e6f7c789ea71/srgutils-0.4.11-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/srgutils/0.4.11/fbad1341ffdb47d276bbdc40ecb06da49e053e74/srgutils-0.4.11.jar">
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.1/311c00d3764db7fa3ba5f26d0acb5840e52454aa/log4j-core-2.17.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-core/2.17.1/779f60f3844dadc3ef597976fcb1e5127b1f343d/log4j-core-2.17.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d23d37cc41300a7f6eba7813855dbb224e2a3177/log4j-api-2.17.1-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d771af8e336e372fb5399c99edabe0919aeaf5b2/log4j-api-2.17.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.2.2/d20a6df6fcb6308fea22c835d23e0297454d759d/lwjgl-jemalloc-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-jemalloc/3.2.2/338b25b99da3ba5f441f6492f2ce2a9c608860ed/lwjgl-jemalloc-3.2.2-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.2/1f60241adab8073234fbe7d38cf9dbc4c28c50b6/lwjgl-openal-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.2.2/ec20a7d42a2438528fca87e60b1705f1e2339ddb/lwjgl-openal-3.2.2-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.2/4f5dffe36ce3f4a35d9d0ea1b7b31cd49e36d58b/lwjgl-opengl-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.2.2/d8dcdc91066cae2d2d8279cb4a9f9f05d9525826/lwjgl-opengl-3.2.2-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.2/3e402df983933dec9d9123e494fa3130b3900ab8/lwjgl-glfw-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.2.2/dc6826d636bf796b33a49038c354210e661bfc17/lwjgl-glfw-3.2.2-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.2/2eb5cd96aabf2f1abf165dff12ab882878f7dc1d/lwjgl-stb-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.2.2/811f705cbb29e8ae8d60bdf8fdd38c0c123ad3ef/lwjgl-stb-3.2.2-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.2.2/2fe76dcf2ca02ae0e64ac7c69eb251c09df0e922/lwjgl-tinyfd-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-tinyfd/3.2.2/e9115958773644e863332a6a06488d26f9e1fc9f/lwjgl-tinyfd-3.2.2-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.2/b32bcb411ea7a91aab25b1d0309887aae16778df/lwjgl-3.2.2-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.2.2/5359f3aa50d36352815fc662ea73e1c00d22170/lwjgl-3.2.2-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.12.4/2c08f3a985dfc7f86dcd705a360e5e1a13eac068/text2speech-1.12.4-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/com.mojang/text2speech/1.12.4/7e37c535186a058d730ec03491182fae2efb57be/text2speech-1.12.4-natives-windows.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/srgutils/0.4.3/7301c7dc73679464c2e504c2d56f488d08dcb334/srgutils-0.4.3-sources.jar" kind="lib" path="C:/Users/legol/.mcreator/gradle/caches/modules-2/files-2.1/net.minecraftforge/srgutils/0.4.3/84aecb8fc78bd0dd7299bd9963ac9eb83bd00aad/srgutils-0.4.3.jar">
 		<attributes>
 			<attribute name="gradle_used_by_scope" value="main,test"/>
 		</attributes>

@@ -1,0 +1,9 @@
+JVM:         C:\Program Files\Pylo1\MCreator20233 - Copy\jdk\bin\java.exe
+JVM Args:    
+Run Args:    "--strip", "--input", "C:\Users\legol\MCreatorWorkspaces\tr_slender\build\fg_cache\mcp\1.18.2-20220404.173914\joined\0d9864880f8ddfe2bbcab4f4c6a2a5b7000e62e6\AccessTransformer\output.jar", "--output", "C:\Users\legol\MCreatorWorkspaces\tr_slender\build\fg_cache\mcp\1.18.2-20220404.173914\joined\0d9864880f8ddfe2bbcab4f4c6a2a5b7000e62e6\SideStripper\output.jar", "--data", "C:\Users\legol\MCreatorWorkspaces\tr_slender\build\fg_cache\mcp\1.18.2-20220404.173914\joined\0d9864880f8ddfe2bbcab4f4c6a2a5b7000e62e6\SideStripper\string_data.sas"
+Classpath:   C:\Users\legol\.mcreator\gradle\caches\forge_gradle\maven_downloader\net\minecraftforge\mergetool\1.1.6\mergetool-1.1.6-fatjar.jar
+Working Dir: C:\Users\legol\MCreatorWorkspaces\tr_slender\build\fg_cache\mcp\1.18.2-20220404.173914\joined\0d9864880f8ddfe2bbcab4f4c6a2a5b7000e62e6\SideStripper
+Main Class:  net.minecraftforge.mergetool.ConsoleMerger
+Input:  C:\Users\legol\MCreatorWorkspaces\tr_slender\build\fg_cache\mcp\1.18.2-20220404.173914\joined\0d9864880f8ddfe2bbcab4f4c6a2a5b7000e62e6\AccessTransformer\output.jar
+Output: C:\Users\legol\MCreatorWorkspaces\tr_slender\build\fg_cache\mcp\1.18.2-20220404.173914\joined\0d9864880f8ddfe2bbcab4f4c6a2a5b7000e62e6\SideStripper\output.jar
+Data:   C:\Users\legol\MCreatorWorkspaces\tr_slender\build\fg_cache\mcp\1.18.2-20220404.173914\joined\0d9864880f8ddfe2bbcab4f4c6a2a5b7000e62e6\SideStripper\string_data.sas

@@ -1,8 +1,7 @@
 {
   "parent": "block/fence_side",
   "textures": {
-    "texture": "tr_slender:block/tainted_planks",
-    "particle": "tr_slender:block/tainted_planks"
-  },
-  "render_type": "solid"
+    "texture": "tr_slender:blocks/tainted_planks",
+    "particle": "tr_slender:blocks/tainted_planks"
+  }
 }

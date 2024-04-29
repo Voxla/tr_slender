@@ -1,14 +1,16 @@
 
 package net.mcreator.trslender.block;
 
-import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.common.util.ForgeSoundType;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.material.PushReaction;
+import net.minecraft.world.level.material.Material;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
@@ -20,9 +22,14 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+
+import net.mcreator.trslender.init.TrSlenderModBlocks;
 
 import java.util.List;
 import java.util.Collections;
@@ -31,11 +38,10 @@ public class PageBlock extends Block {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
 
 	public PageBlock() {
-		super(BlockBehaviour.Properties.of().ignitedByLava()
-				.sound(new ForgeSoundType(1.0f, 1.0f, () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("tr_slender:pagegrab")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("tr_slender:pagehit")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("tr_slender:pagegrab")), () -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("tr_slender:pagehit")),
-						() -> ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("tr_slender:pagehit"))))
-				.strength(0f, 1200f).noCollission().noOcclusion().pushReaction(PushReaction.DESTROY).isRedstoneConductor((bs, br, bp) -> false));
+		super(BlockBehaviour.Properties.of(Material.WOOL)
+				.sound(new ForgeSoundType(1.0f, 1.0f, () -> new SoundEvent(new ResourceLocation("tr_slender:pagegrab")), () -> new SoundEvent(new ResourceLocation("tr_slender:pagehit")),
+						() -> new SoundEvent(new ResourceLocation("tr_slender:pagegrab")), () -> new SoundEvent(new ResourceLocation("tr_slender:pagehit")), () -> new SoundEvent(new ResourceLocation("tr_slender:pagehit"))))
+				.strength(0f, 1200f).noCollission().noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
 		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
 	}
 
@@ -85,10 +91,20 @@ public class PageBlock extends Block {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
+	public PushReaction getPistonPushReaction(BlockState state) {
+		return PushReaction.DESTROY;
+	}
+
+	@Override
+	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
 		return Collections.singletonList(new ItemStack(this, 1));
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public static void registerRenderLayer() {
+		ItemBlockRenderTypes.setRenderLayer(TrSlenderModBlocks.PAGE.get(), renderType -> renderType == RenderType.cutout());
 	}
 }

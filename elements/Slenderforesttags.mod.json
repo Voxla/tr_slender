@@ -1,0 +1,21 @@
+{
+  "_fv": 47,
+  "_type": "tag",
+  "definition": {
+    "type": "Biomes",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "biomes": [
+      {
+        "value": "CUSTOM:TaintedForest"
+      },
+      {
+        "value": "CUSTOM:TaintedForests"
+      }
+    ],
+    "name": "slenderforesttags",
+    "namespace": "mod"
+  }
+}

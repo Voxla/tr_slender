@@ -18,7 +18,7 @@ public class Staticnormrender5Procedure {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayer _serverPlayer) {
 					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.SURVIVAL;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+				} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
 					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.SURVIVAL;
 				}
 				return false;
@@ -27,13 +27,13 @@ public class Staticnormrender5Procedure {
 			public boolean checkGamemode(Entity _ent) {
 				if (_ent instanceof ServerPlayer _serverPlayer) {
 					return _serverPlayer.gameMode.getGameModeForPlayer() == GameType.ADVENTURE;
-				} else if (_ent.level().isClientSide() && _ent instanceof Player _player) {
+				} else if (_ent.level.isClientSide() && _ent instanceof Player _player) {
 					return Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()) != null && Minecraft.getInstance().getConnection().getPlayerInfo(_player.getGameProfile().getId()).getGameMode() == GameType.ADVENTURE;
 				}
 				return false;
 			}
 		}.checkGamemode(entity)) {
-			if (entity instanceof LivingEntity _livEnt2 && _livEnt2.hasEffect(TrSlenderModMobEffects.SLENDER_STATIC.get())) {
+			if (entity instanceof LivingEntity _livEnt ? _livEnt.hasEffect(TrSlenderModMobEffects.SLENDER_STATIC.get()) : false) {
 				if ((entity.getCapability(TrSlenderModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TrSlenderModVariables.PlayerVariables())).staticnorm > 30
 						&& (entity.getCapability(TrSlenderModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TrSlenderModVariables.PlayerVariables())).staticnorm < 33
 						|| (entity.getCapability(TrSlenderModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new TrSlenderModVariables.PlayerVariables())).staticnorm > 30

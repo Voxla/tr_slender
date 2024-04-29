@@ -4,9 +4,12 @@ package net.mcreator.trslender.world.features;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnoreProcessor;
+import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.FeaturePlaceContext;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.Mirror;
@@ -16,21 +19,42 @@ import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.core.Registry;
+import net.minecraft.core.Holder;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.trslender.procedures.TaintedTreeLargeAdditionalGenerationConditionProcedure;
+import net.mcreator.trslender.init.TrSlenderModBlocks;
 
 import java.util.Set;
 import java.util.List;
 
 public class TaintedTreeLargeFeature extends Feature<NoneFeatureConfiguration> {
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	public static TaintedTreeLargeFeature FEATURE = null;
+	public static Holder<ConfiguredFeature<NoneFeatureConfiguration, ?>> CONFIGURED_FEATURE = null;
+	public static Holder<PlacedFeature> PLACED_FEATURE = null;
+
+	public static Feature<?> feature() {
+		FEATURE = new TaintedTreeLargeFeature();
+		CONFIGURED_FEATURE = FeatureUtils.register("tr_slender:tainted_tree_large", FEATURE, FeatureConfiguration.NONE);
+		PLACED_FEATURE = PlacementUtils.register("tr_slender:tainted_tree_large", CONFIGURED_FEATURE, List.of());
+		return FEATURE;
+	}
+
+	public static Holder<PlacedFeature> placedFeature() {
+		return PLACED_FEATURE;
+	}
+
+	public static final Set<ResourceLocation> GENERATE_BIOMES = Set.of(new ResourceLocation("tr_slender:tainted_forests"), new ResourceLocation("tr_slender:tainted_forest"));
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD, ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("tr_slender:slender_gamemode")));
 	private final List<Block> base_blocks;
 	private StructureTemplate template = null;
 
 	public TaintedTreeLargeFeature() {
 		super(NoneFeatureConfiguration.CODEC);
-		base_blocks = List.of(Blocks.GRASS_BLOCK);
+		base_blocks = List.of(Blocks.GRASS_BLOCK, TrSlenderModBlocks.TAINTED_GRASS_BLOCK.get());
 	}
 
 	@Override
